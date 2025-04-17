@@ -7,9 +7,9 @@
 
 :root {
   --primary-color: #222831; /* Cor principal */
-  --secondary-color: #393e46; /* Cor secundária */
+  --secondary-color: #babcbd; /* Cor secundária */
   --background-color: #08141b; /* Cor de fundo */
-  --text-color: #000000; /* Cor do texto */
+  --text-color: #ffffff; /* Cor do texto */
   --text-light-color: #09f3ff; /* Cor do texto claro */
   --hover-color: #10cbd4; /* Cor de hover */
 }
@@ -18,5 +18,4 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: var(--background-color);
-  color: var(--text-color);
 }
