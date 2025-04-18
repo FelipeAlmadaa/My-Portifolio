@@ -3,7 +3,7 @@ main {
   align-items: center;
 }
 
-.container-about {
+.container-home {
   display: flex;
   flex-direction: row;
   align-items: center;
