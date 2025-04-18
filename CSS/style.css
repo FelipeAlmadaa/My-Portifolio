@@ -7,15 +7,15 @@
 
 :root {
   --primary-color: #222831; /* Cor principal */
-  --secondary-color: #babcbd; /* Cor secundária */
+  --secondary-color: #a7a9ab; /* Cor secundária */
   --background-color: #08141b; /* Cor de fundo */
   --text-color: #ffffff; /* Cor do texto */
-  --text-light-color: #09f3ff; /* Cor do texto claro */
-  --hover-color: #10cbd4; /* Cor de hover */
+  --text-light-color: #69d678; /* Cor do texto claro */
+  --hover-color: #69d678; /* Cor de hover */
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   background-color: var(--background-color);
 }
