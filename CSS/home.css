@@ -57,7 +57,9 @@ p {
 }
 
 .scroll-down {
-  margin-top: 120px;
+  padding-bottom: 50px;
+  margin-top: 160px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
