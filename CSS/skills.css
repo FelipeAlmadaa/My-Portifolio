@@ -16,7 +16,8 @@
   align-items: center;
   max-width: 100%;
   gap: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   margin-right: 0px;
 }
 .container-skills h2 {
@@ -24,10 +25,10 @@
   align-self: center;
   font-size: 1.4rem;
   color: var(--text-color);
-  margin-top: -18%;
+  margin-top: -19%;
 }
 .container-skills p {
-  margin-bottom: -150px;
+  margin-bottom: -200px;
   text-align: center;
   font-size: 0.8rem;
   color: var(--text-color);
@@ -99,6 +100,10 @@
   width: 80%;
   animation-delay: 0.3s;
 }
+.skill-per.vscode {
+  width: 95%;
+  animation-delay: 0.3s;
+}
 
 .skill-per.vbnet {
   width: 85%;
@@ -116,6 +121,11 @@
 }
 
 .skill-per.software-development {
+  width: 90%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.software-inglish {
   width: 90%;
   animation-delay: 0.1s;
 }

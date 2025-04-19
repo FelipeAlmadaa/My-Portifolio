@@ -121,6 +121,7 @@
   max-width: 100%;
 }
 .list-goals-1 {
+  cursor: pointer;
   margin-top: -80px;
   list-style-type: "🎯 ";
   text-align: left;
@@ -133,6 +134,7 @@
 }
 
 .list-goals-2 {
+  cursor: pointer;
   margin-top: -80px;
   list-style-type: "🎯 ";
   text-align: left;
