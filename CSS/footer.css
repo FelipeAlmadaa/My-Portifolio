@@ -1,13 +1,78 @@
 footer {
-  margin-top: 100px;
-  border-top: 2px solid var(--text-light-color);
-  background-color: var(--background-color);
-
+  border-top: 2px solid rgba(77, 157, 2, 0.5);
+  height: 200px;
   padding: 20px;
   text-align: center;
 }
-
+h3 {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
 footer p {
+  padding: 20px;
+  margin-bottom: 23px;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--text-color);
+}
+.social-links,
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  font-size: 0.8rem;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-family: "Titillium Web", sans-serif;
+  color: #333;
+  border-radius: 10px;
+  background: white;
+  margin: 5px;
+  transition: 0.6s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 20px;
+  width: 20px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.6s;
+  text-align: center;
+}
+
+.social-btn:hover {
+  width: 280px;
+}
+
+.social-btn#email:hover span {
+  width: 200px;
+}
+.social-btn:hover span {
+  padding: 10px;
+  width: 180px;
+}
+
+#email svg {
+  fill: #000000;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #000000;
+}
+
+#whatsapp svg {
+  fill: #25d366;
 }

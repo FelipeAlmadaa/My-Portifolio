@@ -1,4 +1,5 @@
 .about-container {
+  border-top: 2px solid rgba(56, 113, 3, 0.5);
   background-color: #0c1d27;
   display: flex;
   flex-direction: column;

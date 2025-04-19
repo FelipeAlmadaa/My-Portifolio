@@ -37,7 +37,7 @@ main {
   height: 400px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: -33px;
+  margin-right: -26px;
   border: 3px solid white;
 }
 
@@ -59,7 +59,7 @@ p {
 .scroll-down {
   padding-bottom: 50px;
   margin-top: 160px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
