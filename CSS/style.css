@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +5,12 @@
 }
 
 :root {
-  --primary-color: #222831; /* Cor principal */
-  --secondary-color: #a7a9ab; /* Cor secundária */
-  --background-color: #08141b; /* Cor de fundo */
-  --text-color: #ffffff; /* Cor do texto */
-  --text-light-color: #69d678; /* Cor do texto claro */
-  --hover-color: #69d678; /* Cor de hover */
+  --primary-color: #222831;
+  --secondary-color: #a7a9ab;
+  --background-color: #08141b;
+  --text-color: #ffffff;
+  --text-light-color: #69d678;
+  --hover-color: #69d678;
 }
 
 body {
@@ -29,9 +28,4 @@ body {
 .show {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* For skill bars animation */
-.skill-per {
-  transition: width 1.5s ease-in-out;
 }
