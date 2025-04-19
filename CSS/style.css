@@ -19,3 +19,19 @@ body {
   line-height: 1.6;
   background-color: var(--background-color);
 }
+
+.hidden-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* For skill bars animation */
+.skill-per {
+  transition: width 1.5s ease-in-out;
+}
