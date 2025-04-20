@@ -28,7 +28,7 @@
   margin-top: -20%;
 }
 .container-skills p {
-  margin-bottom: -260px;
+  margin-bottom: -180px;
   text-align: center;
   font-size: 1.1rem;
   color: var(--text-color);
@@ -38,7 +38,7 @@
   max-width: 500px;
   width: 100%;
   border: 2px solid #ffffff;
-  margin-top: 200px;
+  margin-top: 180px;
   padding: 10px 20px;
   border-radius: 7px;
   transition: transform 0.5s ease, border-color 0.5s ease;

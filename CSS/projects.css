@@ -48,6 +48,18 @@
   margin-bottom: 20px;
 }
 
+.card-tags span:hover {
+  cursor: default;
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.card-company span:hover {
+  cursor: default;
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
 .card-tags span {
   background-color: #e0e0e0;
   padding: 4px 8px;

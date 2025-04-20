@@ -70,7 +70,7 @@
   color: var(--text-color);
 }
 .custom-div h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text-light-color);
   margin-bottom: 110px;
 }
@@ -101,7 +101,7 @@
 }
 
 .custom-3-div h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text-light-color);
   margin-bottom: 110px;
   text-align: center;
