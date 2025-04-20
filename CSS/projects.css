@@ -1,0 +1,159 @@
+.container-projects {
+  border-top: 2px solid rgba(56, 113, 3, 0.5);
+  background-color: #0c1d27;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.container-projects h2 {
+  position: absolute;
+  align-self: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-top: -32%;
+  margin-bottom: 20px;
+}
+
+.descrition-projects {
+  position: absolute;
+  align-self: center;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  text-align: justify;
+  margin-top: -29%;
+}
+
+.container-grup-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  gap: 60px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-right: 0px;
+}
+
+/* Cards Config */
+
+.card-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card-tags span {
+  background-color: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+}
+
+.card-company {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-company span {
+  margin-right: 10px;
+  background-color: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+}
+.card {
+  position: relative;
+  aspect-ratio: 16/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card p {
+  color: black;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  filter: brightness(0.7);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card-content {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card-content {
+  transform: rotateX(0deg);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card-description {
+  margin: 10px 0 10px;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card-button {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  background: #777;
+  border: none;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+}
+
+.disable-button {
+  background: #ccc;
+  color: #777;
+  border: none;
+  cursor: not-allowed;
+}
+
+.exclusive {
+  color: #e41010 !important;
+}

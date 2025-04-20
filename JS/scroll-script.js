@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sectionsToAnimate = document.querySelectorAll(
-    ".container-home, .about-container, .container-grup, .container-skills, .container-grup-skill-main"
+    ".container-home, .about-container, .container-grup, .container-skills, .container-grup-skill-main, .container-projects"
   );
 
   const observer = new IntersectionObserver(
