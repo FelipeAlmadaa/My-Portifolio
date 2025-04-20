@@ -5,14 +5,14 @@ footer {
   text-align: center;
 }
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--text-color);
   margin-bottom: 20px;
 }
 footer p {
   padding: 20px;
   margin-bottom: 23px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   color: var(--text-color);
 }
@@ -24,7 +24,7 @@ footer p {
 }
 
 .social-btn {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   cursor: pointer;
   height: 40px;
   width: 40px;
@@ -54,7 +54,7 @@ footer p {
 }
 
 .social-btn#email:hover span {
-  width: 200px;
+  width: 220px;
 }
 .social-btn:hover span {
   padding: 10px;

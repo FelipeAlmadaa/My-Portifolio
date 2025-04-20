@@ -14,28 +14,28 @@
   align-self: center;
   font-size: 1.4rem;
   color: var(--text-color);
-  margin-top: -32%;
+  margin-top: -26%;
   margin-bottom: 20px;
 }
 
 .descrition-projects {
   position: absolute;
   align-self: center;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: var(--text-color);
   text-align: justify;
-  margin-top: -29%;
+  margin-top: -24%;
 }
 
 .container-grup-projects {
   display: grid;
-  grid-template-columns: repeat(2, 550px);
+  grid-template-columns: repeat(2, 580px);
   justify-content: center;
   align-items: center;
   max-width: 100%;
   gap: 60px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 120px;
   margin-right: 0px;
 }
 
@@ -52,7 +52,7 @@
   background-color: #e0e0e0;
   padding: 4px 8px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #333;
 }
 
@@ -67,7 +67,7 @@
   background-color: #e0e0e0;
   padding: 4px 8px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #333;
 }
 .card {
@@ -92,7 +92,6 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-
   filter: brightness(0.7);
 }
 
@@ -120,14 +119,14 @@
 
 .card-title {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.3rem;
   color: #333;
   font-weight: 700;
 }
 
 .card-description {
   margin: 10px 0 10px;
-  font-size: 12px;
+  font-size: 0.9rem;
   color: #777;
   line-height: 1.4;
 }

@@ -9,7 +9,7 @@ main {
   align-items: center;
   justify-content: center;
   max-width: 1100px;
-  height: 600px;
+  height: 850px;
   margin: 0 auto;
 }
 
@@ -33,11 +33,11 @@ main {
 }
 
 .info-right img {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: -26px;
+  margin-right: -36px;
   border: 3px solid white;
 }
 
@@ -52,7 +52,7 @@ h2 span {
 p {
   color: var(--secondary-color);
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 10px;
 }
 
