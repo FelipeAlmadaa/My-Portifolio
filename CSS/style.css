@@ -11,6 +11,18 @@
   --text-color: #ffffff;
   --text-light-color: #69d678;
   --hover-color: #69d678;
+  --skeleton-color-p-h2-span: linear-gradient(
+    120deg,
+    #c7c4c4 25%,
+    #eaeaea 50%,
+    #dddddd 75%
+  );
+  --skeleton-div: linear-gradient(
+    120deg,
+    #aaa8a8 25%,
+    #eaeaea 50%,
+    #787878 75%
+  );
 }
 
 body {

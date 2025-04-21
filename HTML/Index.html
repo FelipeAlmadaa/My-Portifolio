@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/CSS/about.css" />
     <link rel="stylesheet" href="/CSS/skills.css" />
     <link rel="stylesheet" href="/CSS/projects.css">
+    <link rel="stylesheet" href="/CSS/skeleton-effect.css">
   </head>
   <body>
     <header>
@@ -37,16 +38,16 @@
       </div>
     </header>
     <main>
-      <div class="container-home " id="home">
+      <div class="container-home loading" id="home">
         <div class="info-left">
-          <h2>
+          <h2 >
             Hi, I'm<br />
-            <span>Felipe Almada</span>
+            <span class="skeleton-box skeleton-title">Felipe Almada</span>
           </h2>
          
             <div class="loader">
               <div class="words">
-                <span class="word">Bachelor of Science and Technology</span>
+                <span class="word ">Bachelor of Science and Technology</span>
                 <span class="word">Software Developer</span>
                 <span class="word">Full-Stack - Developer</span>
                 <span class="word">Back-End - Vb.Net</span>
@@ -66,7 +67,7 @@
             >
           </p>
         </div>
-        <div class="info-right"><img src="/IMGS/eu2.jpg" alt="" /></div>
+        <div class="info-right"><img  src="/IMGS/eu2.jpg" alt="" /></div>
       </div>
       <div class="scroll-down">
         <script
@@ -82,7 +83,7 @@
           autoplay
         ></dotlottie-player>
       </div>
-      <div class="about-container" id="about">
+      <div class="about-container loading" id="about">
         <h2>About Me</h2>
         <p class="about-text">
           I hold a Bachelor's degree in Science and Technology from the Federal
@@ -130,7 +131,7 @@
           </div>
         </div>
       </div>
-      <div class="container-skills" id="skills"><h2>Skills</h2>
+      <div class="container-skills loading" id="skills"><h2>Skills</h2>
         <p>Technologies I use to develop high-performance web/desktop applications and engineer efficient solutions</p>
         <div class="container-grup-skill-main">
         <div class="container-skill-grup">
@@ -229,12 +230,12 @@
 </div></div>
 </div>
       </div>
-      <div class="container-projects" id="projects">
+      <div class="container-projects loading" id="projects">
         <h2>My Projects</h2>
         <p class="descrition-projects">Some of my projects during my carrier</p>
         <div class="container-grup-projects">
           <div class="card">
-            <img src="/IMGS/eu.jpg" alt="">
+            <img src="/IMGS/customer-service-communication.jpg" alt="">
             <div class="card-content">
               <p class="card-title">ATC - CUSTOMER SERVICE</p>
               <p class="card-description"> Application focused on contingency situations, with improvements in UX design and usability. Integration with the ADMS system was also implemented, optimizing the tool's efficiency. </p>
@@ -246,6 +247,8 @@
                 <span>Microsoft Visual Studio</span>
                 <span>VB.Net</span>
                 <span>SQL</span>
+                <span>Front-End</span>
+                <span>Back-End</span>
               </div>
               <div class="card-actions">
                 <button class="card-button disable-button ">Visit Project</button>
@@ -254,7 +257,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="/IMGS/eu.jpg" alt="">
+            <img src="/IMGS/istockphoto-1364931222-612x612.jpg" alt="">
             <div class="card-content">
               <p class="card-title">PROINC - APPLICATION FOR CORRECTING INCONSISTENCIES</p>
               <p class="card-description"> System developed for correcting inconsistencies, focusing on UX design and usability improvements. Integration with the ADMS system was also implemented, optimizing the tool's efficiency. </p>
@@ -266,6 +269,8 @@
                 <span>Microsoft Visual Studio</span>
                 <span>VB.Net</span>
                 <span>SQL</span>
+                <span>Front-End</span>
+                <span>Back-End</span>
               </div>
               <div class="card-actions">
                 <button class="card-button disable-button ">Visit Project</button>
@@ -320,8 +325,8 @@
         
       </div>
     </main>
-    <footer id="contact">
-      <h3>Contact</h2>
+    <footer id="contact" class="loading">
+      <h3 class="contact-text-footer">Contact</h2>
        <div class="social-midia">
         <div class="social-links">
           <div id="whatsapp" class="social-btn flex-center">
@@ -352,14 +357,15 @@
           </div>
         </div>
        </div>
-       <p>
+       <p class="contact-text-footer">
             If you have any questions or would like to discuss a project,
             please feel free to reach out to me via email or through my social
             media channels.
           </p>
-      <p>&copy; 2025 Felipe Almada. All Rights Reserved.</p>
+      <p class="contact-text-footer">&copy; 2025 Felipe Almada. All Rights Reserved.</p>
     </footer>
   </body>
+  <script src="/JS/skeleton.js"></script>
   <script src="/JS/script.js"></script>
   <script src="/JS/scroll-script.js"></script>
 </html>

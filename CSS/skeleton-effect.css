@@ -1,0 +1,242 @@
+.loading .info-left h2,
+.loading .info-left h2 span,
+.loading .words span,
+.loading .info-left p,
+.loading .msg-shine {
+  background: var(--skeleton-color-p-h2-span);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+  margin-right: 170px;
+}
+
+.loading .info-right img {
+  opacity: 0;
+}
+
+.loading .info-left {
+  margin-top: 200px;
+}
+.loading .info-right {
+  margin-top: 200px;
+  background: var(--skeleton-div);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  animation: shimmer 0.2s infinite ease-in-out;
+  color: transparent;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
+}
+
+/*about section*/
+
+.about-container.loading h2,
+.about-container.loading h3,
+.about-container.loading p,
+.about-container.loading li {
+  background: var(--skeleton-color-p-h2-span);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+}
+
+.about-container.loading h2 {
+  height: 24px;
+  margin-left: -20px;
+}
+.about-container.loading h3 {
+  height: 24px;
+  margin-bottom: 188px;
+  margin-left: -20px;
+}
+
+.about-container.loading p {
+  height: 16px;
+  margin-left: -20px;
+}
+.about-container.loading li {
+  height: 16px;
+}
+
+.about-container.loading .custom-div img,
+.about-container.loading .custom-3-div img {
+  opacity: 0;
+}
+
+.about-container.loading .custom-div,
+.about-container.loading .custom-3-div {
+  background: var(--skeleton-div);
+  background-size: 300% 100%;
+  animation: shimmer 1.8s infinite ease-in-out;
+  border-radius: 12px;
+}
+
+.about-container.loading .custom-div,
+.about-container.loading .custom-3-div {
+  padding: 12px;
+  min-height: 200px;
+}
+
+/*skill section*/
+.container-skills.loading h2 {
+  background: var(--skeleton-color-p-h2-span);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+  height: 24px;
+  margin-bottom: 20px;
+  margin-left: -24px;
+}
+.container-skills.loading p {
+  background: var(--skeleton-color-p-h2-span);
+  background-size: 300% 100%;
+  width: 30%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+  height: 20px;
+  margin-bottom: -240px;
+  margin-left: 1180px;
+}
+
+.container-skills.loading .title {
+  background: linear-gradient(120deg, #bfbfbf 25%, #eaeaea 50%, #dddddd 75%);
+  background-size: 300% 100%;
+  animation: shimmer 2s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+  display: inline-block;
+  height: 20px;
+}
+
+.container-skills.loading .title img {
+  opacity: 0;
+}
+
+.container-skills.loading .skill-bar {
+  background: linear-gradient(120deg, #cfcfcf 25%, #eeeeee 50%, #dddddd 75%);
+  background-size: 300% 100%;
+  animation: shimmer 2.2s infinite ease-in-out;
+  border-radius: 4px;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-skills.loading .skill-per,
+.container-skills.loading .tooltip {
+  opacity: 0;
+}
+
+/*project section*/
+
+.container-projects.loading h2,
+.container-projects.loading .descrition-projects {
+  background: var(--skeleton-color-p-h2-span);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.container-projects.loading .card {
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  animation: shimmer 2s infinite ease-in-out;
+}
+
+.container-projects.loading .card img {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(120deg, #c4c4c4 25%, #eaeaea 50%, #dddddd 75%);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.container-projects.loading .card-title,
+.container-projects.loading .card-description,
+.container-projects.loading .card-company span,
+.container-projects.loading .card-tags span,
+.container-projects.loading .card-button,
+.container-projects.loading .card {
+  background: linear-gradient(120deg, #d0d0d0 25%, #eaeaea 50%, #d0d0d0 75%);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  color: transparent;
+  border-radius: 4px;
+}
+
+/* definir altura simulada dos textos */
+.container-projects.loading .card-title {
+  height: 20px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+.container-projects.loading .card-description {
+  height: 40px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.container-projects.loading .card-company span,
+.container-projects.loading .card-tags span,
+.container-projects.loading .card-button {
+  height: 15px;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  width: 100px;
+}
+
+.loading .exclusive {
+  color: transparent !important;
+  background: linear-gradient(120deg, #d0d0d0 25%, #eaeaea 50%, #d0d0d0 75%);
+  background-size: 300% 100%;
+  animation: shimmer 2.5s infinite ease-in-out;
+  border-radius: 4px;
+  display: inline-block;
+  height: 15px;
+  width: 100px; /* ajusta se quiser um tamanho mais fiel ao texto */
+}
+
+/*footer section*/
+.loading .social-btn span {
+  color: transparent !important;
+  background: linear-gradient(90deg, #ccc 25%, #e0e0e0 50%, #ccc 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+  border-radius: 4px;
+  display: inline-block;
+  width: 180px; /* ou ajustado pro tamanho de cada span */
+  height: 16px;
+}
+.loading .contact-text-footer {
+  color: transparent !important;
+  background: linear-gradient(90deg, #ccc 25%, #e0e0e0 50%, #ccc 75%);
+  width: 280px; /* ou ajustado pro tamanho de cada span */
+  height: 16px;
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+  border-radius: 4px;
+  margin-left: 1555px;
+}
+
+.loading svg {
+  opacity: 0;
+}
