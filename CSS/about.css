@@ -1,6 +1,6 @@
 .about-container {
-  border-top: 2px solid rgba(56, 113, 3, 0.5);
-  background-color: #0c1d27;
+  /* border-top: 2px solid rgba(74, 74, 74, 0.5); */
+  background-color: var(--background-black);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,6 +70,7 @@
   color: var(--text-color);
 }
 .custom-div h3 {
+  filter: brightness(2.2);
   font-size: 1.2rem;
   color: var(--text-light-color);
   margin-bottom: 110px;
@@ -87,6 +88,7 @@
 }
 
 .custom-3-div {
+  filter: brightness(2.2);
   padding-top: 20px;
   border: solid 2px #e0dfdf;
   width: 1000px;

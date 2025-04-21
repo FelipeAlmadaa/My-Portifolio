@@ -8,8 +8,9 @@
   --primary-color: #222831;
   --secondary-color: #a7a9ab;
   --background-color: #08141b;
+  --background-black: #000000;
   --text-color: #ffffff;
-  --text-light-color: #69d678;
+  --text-light-color: #1535c5;
   --hover-color: #69d678;
   --skeleton-color-p-h2-span: linear-gradient(
     120deg,
@@ -28,7 +29,7 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  background-color: var(--background-color);
+  background-color: var(--background-black);
 }
 
 .hidden-scroll {
@@ -40,4 +41,18 @@ body {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.partial-border {
+  position: relative;
+}
+
+.partial-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px; /* largura da parte da borda */
+  border-top: 2px solid rgba(74, 74, 74, 0.5);
 }

@@ -3,7 +3,7 @@ header {
   height: 70px;
   margin: 0;
   padding: 20px 0;
-  background: var(--background-color);
+  background: var(--background-black);
   color: #fff;
   padding: 20px 20px;
   position: fixed;
@@ -40,13 +40,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--hover-color);
+  filter: brightness(2.2);
+  color: var(--text-light-color);
 }
 
 h1 {
   font-size: 1.8rem;
   margin-left: -11px;
-  color: var(--hover-color);
+  color: var(--text-light-color);
 }
 
 .container-header {

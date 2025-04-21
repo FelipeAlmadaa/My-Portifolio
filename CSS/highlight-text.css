@@ -1,6 +1,11 @@
 .msg-shine {
   color: var(--secondary-color);
-  background: linear-gradient(to right, #69d678 0, #fff 10%, #a7a9ab 80%);
+  background: linear-gradient(
+    to right,
+    var(--text-light-color) 0,
+    #fff 10%,
+    #a7a9ab 80%
+  );
   background-size: 200%;
   background-position: 0;
   background-clip: text;
