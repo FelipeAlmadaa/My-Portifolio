@@ -7,9 +7,12 @@
   .universe {
     margin-left: 150px;
   }
-
+  header {
+    height: 100px;
+  }
   .container-header nav {
     margin-right: 190px;
+    opacity: 0.9;
   }
   .container-header nav ul li a {
     text-decoration: none;
@@ -128,6 +131,8 @@
     transition: none;
     border-color: inherit;
   }
+
+  /*Skins*/
   .container-grup-skill-main {
     display: grid;
     grid-template-columns: repeat(1, 600px);
@@ -149,5 +154,43 @@
     margin-bottom: -185px;
     margin-left: 250px;
     width: 100%;
+  }
+
+  /*Projects*/
+
+  .container-grup-projects {
+    display: grid;
+    grid-template-columns: repeat(1, 580px);
+    margin-left: 460px;
+  }
+
+  .container-projects {
+    height: 2000px;
+  }
+
+  .container-projects h2 {
+    margin-top: -1800px;
+    margin-left: 768px;
+    width: 100%;
+  }
+
+  .descrition-projects {
+    margin-top: -1680px;
+    margin-left: 551px;
+    width: 100%;
+  }
+
+  /*Contact*/
+
+  footer h3 {
+    margin-left: 400px;
+  }
+  footer p {
+    margin-left: 250px;
+    width: 100%;
+  }
+
+  footer .social-midia ul {
+    margin-left: 250px;
   }
 }
