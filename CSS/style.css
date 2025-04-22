@@ -30,6 +30,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   background-color: var(--background-black);
+  color: white;
 }
 
 .hidden-scroll {
