@@ -151,6 +151,15 @@
   color: rgb(0, 0, 0);
 }
 
+.card-button a {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #424242;
+  color: rgb(0, 0, 0);
+}
+
 .card-button:hover {
   background: #000000;
   color: var(--text-color);
