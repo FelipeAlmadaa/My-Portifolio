@@ -1,7 +1,4 @@
-@media (max-width: 480px) {
-}
-@media (min-width: 430px) and (max-width: 932px),
-  (min-width: 200px) and (max-width: 932px) {
+@media (min-width: 430px) and (max-width: 932px) {
   br {
     display: none;
   }
@@ -195,7 +192,17 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 932px) {
+@media (min-width: 200px) and (max-width: 932px) {
+  .partial-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1650px; /* largura da parte da borda */
+    border-top: 2px solid rgba(74, 74, 74, 0.5);
+  }
+
   br {
     display: none;
   }
@@ -212,8 +219,9 @@
   .container-header nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     transition: color 0.3s ease;
+    margin-right: 80px;
   }
 
   .container-header h1 {
@@ -239,16 +247,17 @@
     border: 3px solid white;
   }
   .info-left p {
-    margin-top: 40px;
+    margin-top: 118px;
     margin-left: 60px;
     text-align: justify;
-    width: 441%;
-    font-size: 1.5rem;
+    width: 397%;
+    font-size: 1.8rem;
+    color: #fff;
   }
 
   .info-left h2 {
-    margin-top: 764px;
-    margin-left: 210px;
+    margin-top: 960px;
+    margin-left: 280px;
     width: 500px;
     font-size: 2.5rem;
     color: var(--text-color);
@@ -260,67 +269,91 @@
   }
 
   .info-left .words {
-    margin-left: 205px;
+    margin-left: 280px;
     width: 500px;
   }
 
   .scroll-down {
-    margin-left: 200px;
+    margin-top: 400px;
+    margin-left: 250px;
     width: 500px;
   }
 
   /*about me*/
 
   .about-container {
-    height: 1400px;
+    height: 2600px;
   }
   .about-container h2 {
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-top: -331%;
-    margin-left: 864px;
-    width: 136%;
+    margin-top: -666%;
+    margin-left: 929px;
+    width: 122%;
   }
   .about-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--text-color);
     text-align: justify;
-    margin-top: -208%;
-    width: 278%;
-    margin-left: 601px;
+    margin-top: -547%;
+    width: 241%;
+    margin-left: 641px;
   }
 
   .container-grup {
     margin-left: 500px;
-    margin-top: 500px;
+    margin-top: 360px;
+    grid-template-columns: repeat(1, 500px);
   }
 
   .container-grup .custom-div {
-    margin-left: 20px;
-    width: 366px;
-    height: 260px;
+    margin-left: -188px;
+    width: 881px;
+    height: 360px;
     border: 2px solid white;
   }
 
-  .custom-div p {
-    position: absolute;
-    text-align: center;
-    font-size: 1rem;
-    color: var(--text-color);
-    width: 343px;
+  .custom-3-div h3 {
+    font-size: 1.8rem;
   }
 
   .custom-div h3 {
-    filter: brightness(2.2);
-    font-size: 1.2rem;
-    color: var(--text-light-color);
-    margin-bottom: 110px;
+    font-size: 1.8rem;
+    padding-bottom: 40px;
   }
+
+  .custom-div img {
+    margin-top: -58px;
+  }
+  .custom-div p {
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    width: 808px;
+  }
+
   .custom-3-div {
     border: 2px solid white;
     width: 881px;
-    margin-left: 23px;
+    margin-left: -187px;
   }
+  .list-grup {
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .list-goals-1 {
+    font-size: 1.8rem;
+    width: 190%;
+  }
+
+  .list-goals-2 {
+    width: 188%;
+    margin-top: 100px;
+    margin-left: -100px;
+    font-size: 1.8rem;
+  }
+
   .container-grup .custom-div:hover {
     transform: none;
     transition: none;
@@ -339,25 +372,32 @@
     margin-left: 200px;
   }
 
+  .container-skill-grup {
+    max-width: 600px;
+  }
   .container-skills {
     height: 1600px;
   }
 
   .container-skill-grup {
-    margin-left: 250px;
+    margin-left: 209px;
   }
   .container-skills h2 {
     font-size: 1.8rem;
     margin-bottom: 1285px;
-    margin-left: 850px;
-    width: 100%;
+    margin-left: 874px;
+    width: 82%;
   }
   .container-skills p {
     position: absolute;
-    font-size: 1.5rem;
-    width: 225%;
+    font-size: 1.8rem;
+    width: 206%;
     margin-top: -1220px;
-    margin-left: 107px;
+    margin-left: 125px;
+  }
+
+  .skill-box .title {
+    font-size: 1.8rem;
   }
 
   /*Projects*/
@@ -365,7 +405,7 @@
   .container-grup-projects {
     display: grid;
     grid-template-columns: repeat(1, 580px);
-    margin-left: 460px;
+    margin-left: 500px;
   }
 
   .container-projects {
@@ -383,7 +423,7 @@
     font-size: 1.5rem;
     margin-top: -1680px;
     margin-left: 616px;
-    width: 164%;
+    width: 128%;
   }
 }
 
@@ -391,14 +431,15 @@
 
 footer h3 {
   font-size: 1.8rem;
-  margin-left: 377px;
+  margin-left: 426px;
 }
 footer p {
   margin-left: 166px;
   width: 200%;
+  font-size: 1.8rem;
 }
 
 footer .social-midia ul {
   margin-top: 20px;
-  margin-left: 300px;
+  margin-left: 320px;
 }
