@@ -1,7 +1,6 @@
 @media (max-width: 480px) {
 }
 @media (min-width: 430px) and (max-width: 932px),
-  (min-width: 300px) and (max-width: 932px),
   (min-width: 200px) and (max-width: 932px) {
   br {
     display: none;
@@ -42,7 +41,6 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: -261px;
-
     margin-top: -213px;
     border: 3px solid white;
   }
@@ -195,4 +193,212 @@
   footer .social-midia ul {
     margin-left: 250px;
   }
+}
+
+@media (min-width: 300px) and (max-width: 932px) {
+  br {
+    display: none;
+  }
+  .universe {
+    margin-left: 150px;
+  }
+  header {
+    height: 100px;
+  }
+  .container-header nav {
+    margin-right: 190px;
+    opacity: 0.9;
+  }
+  .container-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+  }
+
+  .container-header h1 {
+    opacity: 0;
+  }
+  .info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    color: var(--text-color);
+  }
+  .info-right img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -389px;
+    margin-top: -213px;
+    border: 3px solid white;
+  }
+  .info-left p {
+    margin-top: 40px;
+    margin-left: 60px;
+    text-align: justify;
+    width: 441%;
+    font-size: 1.5rem;
+  }
+
+  .info-left h2 {
+    margin-top: 764px;
+    margin-left: 210px;
+    width: 500px;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  .info-left h2 span {
+    width: 500px;
+    color: var(--text-light-color);
+  }
+
+  .info-left .words {
+    margin-left: 205px;
+    width: 500px;
+  }
+
+  .scroll-down {
+    margin-left: 200px;
+    width: 500px;
+  }
+
+  /*about me*/
+
+  .about-container {
+    height: 1400px;
+  }
+  .about-container h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: -331%;
+    margin-left: 864px;
+    width: 136%;
+  }
+  .about-text {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: justify;
+    margin-top: -208%;
+    width: 278%;
+    margin-left: 601px;
+  }
+
+  .container-grup {
+    margin-left: 500px;
+    margin-top: 500px;
+  }
+
+  .container-grup .custom-div {
+    margin-left: 20px;
+    width: 366px;
+    height: 260px;
+    border: 2px solid white;
+  }
+
+  .custom-div p {
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 343px;
+  }
+
+  .custom-div h3 {
+    filter: brightness(2.2);
+    font-size: 1.2rem;
+    color: var(--text-light-color);
+    margin-bottom: 110px;
+  }
+  .custom-3-div {
+    border: 2px solid white;
+    width: 881px;
+    margin-left: 23px;
+  }
+  .container-grup .custom-div:hover {
+    transform: none;
+    transition: none;
+    border-color: inherit;
+  }
+  .container-grup .custom-3-div:hover {
+    transform: none;
+    transition: none;
+    border-color: inherit;
+  }
+
+  /*Skins*/
+  .container-grup-skill-main {
+    display: grid;
+    grid-template-columns: repeat(1, 600px);
+    margin-left: 200px;
+  }
+
+  .container-skills {
+    height: 1600px;
+  }
+
+  .container-skill-grup {
+    margin-left: 250px;
+  }
+  .container-skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1285px;
+    margin-left: 850px;
+    width: 100%;
+  }
+  .container-skills p {
+    position: absolute;
+    font-size: 1.5rem;
+    width: 225%;
+    margin-top: -1220px;
+    margin-left: 107px;
+  }
+
+  /*Projects*/
+
+  .container-grup-projects {
+    display: grid;
+    grid-template-columns: repeat(1, 580px);
+    margin-left: 460px;
+  }
+
+  .container-projects {
+    height: 2000px;
+  }
+
+  .container-projects h2 {
+    font-size: 1.8rem;
+    margin-top: -1800px;
+    margin-left: 768px;
+    width: 100%;
+  }
+
+  .descrition-projects {
+    font-size: 1.5rem;
+    margin-top: -1680px;
+    margin-left: 616px;
+    width: 164%;
+  }
+}
+
+/*Contact*/
+
+footer h3 {
+  font-size: 1.8rem;
+  margin-left: 377px;
+}
+footer p {
+  margin-left: 166px;
+  width: 200%;
+}
+
+footer .social-midia ul {
+  margin-top: 20px;
+  margin-left: 300px;
 }
