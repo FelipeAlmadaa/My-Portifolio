@@ -388,6 +388,10 @@
     font-size: 1.8rem;
   }
 
+  .skill-per .tooltip {
+    font-size: 1.7rem;
+  }
+
   /*Projects*/
 
   .container-grup-projects {
