@@ -1,3 +1,28 @@
+@media (min-width: 1920px) and (max-width: 1920px) {
+  /*about me*/
+  .about-container h2 {
+    font-size: 1.4rem;
+
+    margin-top: -720px;
+    margin-bottom: 200px;
+  }
+  .about-text {
+    font-size: 1rem;
+    width: 53%;
+    margin-top: -750px;
+  }
+  .container-skills h2 {
+    margin-bottom: 300px;
+  }
+
+  .container-projects h2 {
+    margin-bottom: 400px;
+  }
+
+  .descrition-projects {
+    margin-bottom: 300px;
+  }
+}
 @media (min-width: 430px) and (max-width: 932px) {
   br {
     display: none;
@@ -443,7 +468,7 @@
     margin-left: 430px;
   }
   footer p {
-    margin-left: 135px;
+    margin-left: 150px;
     width: 198%;
     font-size: 1.8rem;
   }
