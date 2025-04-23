@@ -4,7 +4,7 @@ footer {
   padding: 20px;
   text-align: center;
 }
-h3 {
+footer h3 {
   font-size: 1.4rem;
   color: var(--text-color);
   margin-bottom: 20px;

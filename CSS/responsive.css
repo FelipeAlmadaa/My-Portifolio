@@ -178,18 +178,6 @@
   }
 
   /*Contact*/
-
-  footer h3 {
-    margin-left: 400px;
-  }
-  footer p {
-    margin-left: 250px;
-    width: 100%;
-  }
-
-  footer .social-midia ul {
-    margin-left: 250px;
-  }
 }
 
 @media (min-width: 200px) and (max-width: 932px) {
@@ -213,7 +201,7 @@
     height: 100px;
   }
   .container-header nav {
-    margin-right: 190px;
+    margin-right: 150px;
     opacity: 0.9;
   }
   .container-header nav ul li a {
@@ -221,7 +209,7 @@
     color: #fff;
     font-size: 1.8rem;
     transition: color 0.3s ease;
-    margin-right: 80px;
+    margin-right: 90px;
   }
 
   .container-header h1 {
@@ -242,7 +230,7 @@
     height: 500px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: -389px;
+    margin-right: -370px;
     margin-top: -213px;
     border: 3px solid white;
   }
@@ -257,7 +245,7 @@
 
   .info-left h2 {
     margin-top: 960px;
-    margin-left: 280px;
+    margin-left: 290px;
     width: 500px;
     font-size: 2.5rem;
     color: var(--text-color);
@@ -269,7 +257,7 @@
   }
 
   .info-left .words {
-    margin-left: 280px;
+    margin-left: 285px;
     width: 500px;
   }
 
@@ -287,7 +275,7 @@
   .about-container h2 {
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-top: -666%;
+    margin-top: -633%;
     margin-left: 929px;
     width: 122%;
   }
@@ -295,7 +283,7 @@
     font-size: 1.8rem;
     color: var(--text-color);
     text-align: justify;
-    margin-top: -547%;
+    margin-top: -498%;
     width: 241%;
     margin-left: 641px;
   }
@@ -404,42 +392,60 @@
 
   .container-grup-projects {
     display: grid;
-    grid-template-columns: repeat(1, 580px);
-    margin-left: 500px;
+    grid-template-columns: repeat(1, 880px);
+    margin-left: 510px;
   }
 
   .container-projects {
-    height: 2000px;
+    height: 3000px;
   }
 
   .container-projects h2 {
     font-size: 1.8rem;
-    margin-top: -1800px;
-    margin-left: 768px;
+    margin-top: -2800px;
+    margin-left: 810px;
     width: 100%;
   }
 
   .descrition-projects {
-    font-size: 1.5rem;
-    margin-top: -1680px;
-    margin-left: 616px;
-    width: 128%;
+    font-size: 1.8rem;
+    margin-top: -2635px;
+    margin-left: 650px;
+    width: 172%;
   }
-}
 
-/*Contact*/
+  .card-content p {
+    font-size: 1.8rem;
+  }
+  .card {
+    aspect-ratio: 0;
+    height: 600px;
+  }
+  .card-company span,
+  .card-tags span {
+    font-size: 1.6rem;
+    background-color: #000000;
+    color: #ffffff;
+  }
 
-footer h3 {
-  font-size: 1.8rem;
-  margin-left: 426px;
-}
-footer p {
-  margin-left: 166px;
-  width: 200%;
-  font-size: 1.8rem;
-}
+  .card-actions .card-button {
+    font-size: 1.6rem;
+  }
 
-footer .social-midia ul {
-  margin-top: 20px;
-  margin-left: 320px;
+  /*Contact*/
+
+  footer h3 {
+    font-size: 1.8rem;
+    margin-left: 407px;
+  }
+  footer p {
+    margin-left: 135px;
+    width: 229%;
+    font-size: 1.8rem;
+  }
+
+  footer .social-midia ul {
+    margin-top: 20px;
+    margin-left: 320px;
+  }
 }
