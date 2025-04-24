@@ -478,3 +478,83 @@
     margin-left: 320px;
   }
 }
+
+@media (min-width: 600px) and (max-width: 932px) {
+  .container-header nav ul li a {
+    margin-right: 118px;
+  }
+
+  .info-right img {
+    margin-right: -293px;
+  }
+  .info-left h2 {
+    margin-left: 435px;
+  }
+  .info-left .words {
+    margin-left: 435px;
+  }
+  .info-left p {
+    width: 344%;
+  }
+  .about-container h2 {
+    margin-top: -400%;
+    margin-left: 1350px;
+  }
+  .about-text {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    text-align: justify;
+    margin-top: -343%;
+    width: 205%;
+    margin-left: 742px;
+  }
+
+  .scroll-down {
+    margin-top: 400px;
+    margin-left: 266px;
+    width: 816px;
+  }
+
+  .container-grup {
+    margin-left: 670px;
+    margin-top: 360px;
+  }
+  .container-skills h2 {
+    margin-left: 1300px;
+    width: 108%;
+  }
+  .container-skill-grup {
+    margin-left: 286px;
+  }
+  .container-skills p {
+    width: 182%;
+  }
+  .container-projects h2 {
+    width: 45%;
+  }
+  .descrition-projects {
+    width: 93%;
+    margin-right: -58px;
+  }
+  .container-grup-projects {
+    display: grid;
+    grid-template-columns: repeat(1, 880px);
+    margin-left: 510px;
+  }
+  .container-grup-projects {
+    margin-left: 670px;
+  }
+  footer h3 {
+    margin-left: 582px;
+  }
+  footer p {
+    margin-left: 150px;
+    width: 180%;
+    font-size: 1.8rem;
+  }
+
+  footer .social-midia ul {
+    margin-top: 20px;
+    margin-left: 355px;
+  }
+}
