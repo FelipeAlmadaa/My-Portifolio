@@ -206,6 +206,14 @@
 }
 
 @media (min-width: 200px) and (max-width: 739px) {
+  .button {
+    margin-left: 410px;
+    width: 170px;
+    border: 1px solid #fff;
+  }
+  .button::before {
+    border: 1px solid #ffffff;
+  }
   .partial-border::before {
     content: "";
     position: absolute;
@@ -624,9 +632,28 @@
     margin-top: 20px;
     margin-left: 115px;
   }
+
+  .button {
+    margin-left: 480px;
+    width: 170px;
+    border: 1px solid #fff;
+  }
+  .button::before {
+    border: 1px solid #ffffff;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 739px) {
+  .button {
+    margin-left: 540px;
+    width: 260px;
+
+    border: 1px solid #fff;
+  }
+  .button_text {
+    font-size: 1.6rem;
+  }
+
   .partial-border::before {
     width: 2100px;
     border-top: 2px solid rgba(74, 74, 74, 0.5);
@@ -645,6 +672,7 @@
     margin-left: 435px;
   }
   .info-left p {
+    margin-bottom: 40px;
     width: 344%;
   }
   .about-container h2 {
