@@ -491,8 +491,10 @@
   }
   .info-left h2 {
     margin-top: 615px;
-    margin-left: 346px;
+    margin-left: 433px;
+
     width: 100%;
+    font-size: 1.5rem;
   }
   .info-left .loader {
     opacity: 0;
@@ -500,11 +502,11 @@
   .info-left p {
     width: 171%;
     margin-left: 187px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .container-header nav ul li a {
-    font-size: 1.5rem;
-    margin-right: 80px;
+    font-size: 1.2rem;
+    margin-right: 92px;
   }
 
   .scroll-down {
@@ -512,18 +514,115 @@
     margin-left: 209px;
   }
   .info-right img {
-    margin-right: 106px;
+    margin-right: 138px;
     margin-bottom: 336px;
   }
   .about-container h2 {
     margin-left: 200px;
-    margin-bottom: 700px;
+    margin-bottom: 1000px;
   }
   .about-text {
-    font-size: 1.4rem;
-    margin-bottom: 400px;
+    font-size: 1.1rem;
+    margin-bottom: 700px;
     margin-left: 250px;
     width: 100%;
+  }
+  .container-grup {
+    margin-left: 290px;
+    margin-top: 350px;
+  }
+
+  .container-grup .custom-div {
+    margin-left: 20px;
+    width: 366px;
+    height: 260px;
+    border: 2px solid white;
+  }
+
+  .custom-div img {
+    margin-top: 0px;
+  }
+  .custom-3-div {
+    border: 2px solid white;
+    width: 890px;
+    margin-left: 23px;
+  }
+  .about-container {
+    height: 1400px;
+  }
+  .custom-div h3 {
+    filter: brightness(2.2);
+    font-size: 1.2rem;
+    color: var(--text-light-color);
+    margin-bottom: 110px;
+  }
+
+  .custom-div p {
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 343px;
+  }
+
+  /*Skins*/
+  .container-grup-skill-main {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+  }
+
+  .container-skill-grup {
+    margin-left: 50px;
+  }
+  .container-skills h2 {
+    margin-top: -1350px;
+    margin-left: 200px;
+  }
+  .container-skills p {
+    margin-top: -55px;
+    margin-left: 188px;
+  }
+  .container-skills {
+    height: 1500px;
+  }
+  .skill-box .title {
+    font-size: 1.2rem;
+  }
+
+  .skill-per .tooltip {
+    font-size: 1.2rem;
+  }
+  .container-projects {
+    height: 2000px;
+  }
+  .container-projects h2 {
+    margin-top: -1800px;
+    margin-left: 200px;
+  }
+  .descrition-projects {
+    margin-top: -1700px;
+    margin-left: 200px;
+  }
+  .container-grup-projects {
+    margin-top: 100px;
+
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 580px);
+  }
+
+  footer h3 {
+    margin-left: 218px;
+  }
+  footer p {
+    margin-left: 228px;
+    font-size: 1.3rem;
+    width: 67%;
+  }
+
+  footer .social-midia ul {
+    margin-top: 20px;
+    margin-left: 115px;
   }
 }
 
