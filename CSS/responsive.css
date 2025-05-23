@@ -16,11 +16,11 @@
   }
 
   .container-projects h2 {
-    margin-bottom: 550px;
+    margin-bottom: 880px;
   }
 
   .descrition-projects {
-    margin-bottom: 500px;
+    margin-bottom: 850px;
   }
 }
 @media (min-width: 430px) and (max-width: 739px) {
@@ -397,7 +397,7 @@
     max-width: 600px;
   }
   .container-skills {
-    height: 1600px;
+    height: 1900px;
   }
 
   .container-skill-grup {
@@ -405,7 +405,7 @@
   }
   .container-skills h2 {
     font-size: 1.8rem;
-    margin-bottom: 1285px;
+    margin-bottom: 1685px;
     margin-left: 874px;
     width: 82%;
   }
@@ -413,7 +413,7 @@
     position: absolute;
     font-size: 1.8rem;
     width: 206%;
-    margin-top: -1220px;
+    margin-top: -1620px;
     margin-left: 125px;
   }
 
@@ -434,19 +434,19 @@
   }
 
   .container-projects {
-    height: 4000px;
+    height: 5000px;
   }
 
   .container-projects h2 {
     font-size: 1.8rem;
-    margin-top: -3800px;
+    margin-top: -4800px;
     margin-left: 810px;
     width: 100%;
   }
 
   .descrition-projects {
     font-size: 1.8rem;
-    margin-top: -3430px;
+    margin-top: -4677px;
     margin-left: 690px;
     width: 172%;
   }
