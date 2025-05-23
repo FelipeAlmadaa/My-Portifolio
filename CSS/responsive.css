@@ -16,11 +16,11 @@
   }
 
   .container-projects h2 {
-    margin-bottom: 880px;
+    margin-bottom: 680px;
   }
 
   .descrition-projects {
-    margin-bottom: 850px;
+    margin-bottom: 650px;
   }
 }
 @media (min-width: 430px) and (max-width: 739px) {
