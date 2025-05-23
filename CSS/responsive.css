@@ -16,11 +16,11 @@
   }
 
   .container-projects h2 {
-    margin-bottom: 400px;
+    margin-bottom: 550px;
   }
 
   .descrition-projects {
-    margin-bottom: 300px;
+    margin-bottom: 500px;
   }
 }
 @media (min-width: 430px) and (max-width: 739px) {
@@ -434,19 +434,19 @@
   }
 
   .container-projects {
-    height: 3000px;
+    height: 4000px;
   }
 
   .container-projects h2 {
     font-size: 1.8rem;
-    margin-top: -2800px;
+    margin-top: -3800px;
     margin-left: 810px;
     width: 100%;
   }
 
   .descrition-projects {
     font-size: 1.8rem;
-    margin-top: -2635px;
+    margin-top: -3430px;
     margin-left: 690px;
     width: 172%;
   }
