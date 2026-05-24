@@ -50,7 +50,7 @@ h2 span {
   color: var(--text-light-color);
 }
 p {
-  color: var(--secondary-color);
+  color: var(--text-color);
   text-align: justify;
   font-size: 1.1rem;
   margin-top: 10px;

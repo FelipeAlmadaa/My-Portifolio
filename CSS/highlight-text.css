@@ -1,59 +1,68 @@
 .msg-shine {
-  color: var(--secondary-color);
-  background: linear-gradient(
-    to right,
-    var(--text-light-color) 0,
-    #fff 10%,
-    #a7a9ab 80%
-  );
+  color: var(--text-color);
+  background: linear-gradient(to right,
+      var(--text-color) 0%,
+      var(--text-light-color) 10%,
+      var(--text-color) 80%);
   background-size: 200%;
   background-position: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 8s infinite linear;
+  animation: shine 5s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
 @-moz-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
 }
+
 @-webkit-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
 }
+
 @-o-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 180px;
   }
+
   100% {
     background-position: 180px;
   }
 }
+
 @keyframes shine {
   0% {
     background-position: 200%;
   }
+
   100% {
     background-position: 0%;
   }
