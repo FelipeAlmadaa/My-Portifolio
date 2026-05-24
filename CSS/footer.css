@@ -38,7 +38,7 @@ footer p {
 .social-midia ul li a {
   width: 60px;
   height: 60px;
-  background-color: #fff;
+  background-color: var(--text-color);
   text-align: center;
   line-height: 60px;
   font-size: 28px;
@@ -46,13 +46,13 @@ footer p {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 3px solid var(--text-color);
   z-index: 1;
   transition: 0.3s;
 }
 .social-midia ul li a .icon {
   position: relative;
-  color: #262626;
+  color: var(--background-color);
   transition: 0.5s;
   z-index: 3;
 }

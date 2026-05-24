@@ -26,11 +26,33 @@
   );
 }
 
+body.light-mode {
+  --background-color: #ffffff;
+  --background-black: #f9f9f9;
+  --text-color: #1a1a1a;
+  --primary-color: #e5e5e5;
+  --secondary-color: #555555;
+  --hover-color: #3b8a45;
+  --skeleton-color-p-h2-span: linear-gradient(
+    120deg,
+    #dddddd 25%,
+    #f2f2f2 50%,
+    #eeeeee 75%
+  );
+  --skeleton-div: linear-gradient(
+    120deg,
+    #cccccc 25%,
+    #e6e6e6 50%,
+    #bbbbbb 75%
+  );
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   background-color: var(--background-black);
-  color: white;
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .hidden-scroll {
