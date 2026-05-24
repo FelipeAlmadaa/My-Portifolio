@@ -1,446 +1,457 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FA | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="./IMGS/codigo-html (1).png">
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/header.css" />
-    <link rel="stylesheet" href="./CSS/home.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
-    <link rel="stylesheet" href="./CSS/text-efetct.css" />
-    <link rel="stylesheet" href="./CSS/highlight-text.css" />
-    <link rel="stylesheet" href="./CSS/about.css" />
-    <link rel="stylesheet" href="./CSS/skills.css" />
-    <link rel="stylesheet" href="./CSS/projects.css">
-    <link rel="stylesheet" href="./CSS/skeleton-effect.css">
-    <link rel="stylesheet" href="./CSS/background-universe.css">
-    <link rel="stylesheet" href="./CSS/responsive.css">
-    <link rel="stylesheet" href="/CSS/download-cv.css">
-  </head>
-  <body>
-    <header>
-      <div class="container-header ">
-        <h1>FA</h1>
-        <nav >
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div onclick="toggleLightMode()" class="container-home loading " id="home">
-        <div class="universe"></div>
-        <div class="info-left">
-          <h2 >
-            Hi, I'm<br />
-            <span class="skeleton-box skeleton-title">Felipe Almada</span>
-          </h2>
-            <div class="loader">
-              <div class="words">
-                <span class="word">Senior Software Engineer</span>
-                <span class="word">Senior QA Automation Engineer</span>
-                <span class="word ">Bachelor of Science and Technology</span>
-                <span class="word">Bachelor of Computer Engineering</span>
-                <span class="word">Postgraduate Degree in Software Quality Management</span>
-                <span class="word">Postgraduate Degree in Devops</span>
-              </div>
-            </div>
-              <p>
-            Senior Backend and QA Engineer with 5+ years of experience developing scalable backend and automation solutions using
-            Python, VB.NET, and JavaScript.  <br />
-            <span class="msg-shine"
-              >Skilled in implementing CI/CD pipelines and test
-            automation to improve software reliability and delivery speed, experienced in agile environments with strong
-            collaboration and problem-solving skills.</span
-            >
-          </p>
-            <a href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV" class="button">
-            <span class="button_lg">
-              <span class="button_sl"></span>
-              <span class="button_text">Download CV</span>
-            </span>
-          </a>
-        </div>
-        <div class="info-right"><img  src="./IMGS/profile-image.png" alt="" /></div>
-      </div>
-      <div class="scroll-down">
-        <script
-          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-          type="module"
-        ></script>
-        <dotlottie-player
-          src="https://lottie.host/2dcd5c23-6252-4332-981b-a07fde4909d9/CfI1zZyDCk.lottie"
-          background="transparent"
-          speed="1"
-          style="width: 100px; height: 100px"
-          loop
-          autoplay
-        ></dotlottie-player>
-      </div>
-      <div class="about-container loading partial-border" id="about">
-        <div class="universe"></div>
-        <h2>About Me</h2>
-        <p class="about-text">
-          I hold a Bachelor’s Degree in Science and Technology from the Federal University of Maranhão (UFMA)
-          and I am currently pursuing a Bachelor’s Degree in Computer Engineering at the same institution.
-          I also completed postgraduate degrees in Software Quality Management and DevOps, strengthening my background
-          in software engineering, automation, quality assurance, and modern development practices.
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FA | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./IMGS/codigo-html (1).png">
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/header.css" />
+  <link rel="stylesheet" href="./CSS/home.css" />
+  <link rel="stylesheet" href="./CSS/footer.css" />
+  <link rel="stylesheet" href="./CSS/text-efetct.css" />
+  <link rel="stylesheet" href="./CSS/highlight-text.css" />
+  <link rel="stylesheet" href="./CSS/about.css" />
+  <link rel="stylesheet" href="./CSS/skills.css" />
+  <link rel="stylesheet" href="./CSS/projects.css">
+  <link rel="stylesheet" href="./CSS/skeleton-effect.css">
+  <link rel="stylesheet" href="./CSS/background-universe.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
+  <link rel="stylesheet" href="/CSS/download-cv.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-header ">
+      <h1>FA</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div onclick="toggleLightMode()" class="container-home loading " id="home">
+      <div class="universe"></div>
+      <div class="info-left">
+        <h2>
+          Hi, I'm<br />
+          <span class="skeleton-box skeleton-title">Felipe Almada</span>
+        </h2>
+        <div class="loader">
+          <div class="words">
+            <span class="word">Senior Software Engineer</span>
+            <span class="word">Senior QA Automation Engineer</span>
+            <span class="word ">Bachelor of Science and Technology</span>
+            <span class="word">Bachelor of Computer Engineering</span>
+            <span class="word">Postgraduate Degree in Software Quality Management</span>
+            <span class="word">Postgraduate Degree in Devops</span>
+          </div>
+        </div>
+        <p>
+          Senior Backend and QA Engineer with 5+ years of experience developing scalable backend and automation
+          solutions using
+          Python, VB.NET, and JavaScript. <br />
+          <span class="msg-shine">Skilled in implementing CI/CD pipelines and test
+            automation to improve software reliability and delivery speed, experienced in agile environments with strong
+            collaboration and problem-solving skills.</span>
         </p>
-        <div class="container-grup">
-          <div class="custom-div">
-            <img src="./IMGS/mortarboard (2).png" alt="" />
-            <h3>Education</h3>
-            <p>
-              Bachelor of Science and Technology  <br> Federal University of
-              Maranhão
-            </p>
-            <p class="date-div">2019 - 2024</p>
-          </div>
-          <div class="custom-div">
-            <img src="./IMGS/mortarboard (2).png" alt="" />
-            <h3>Education</h3>
-            <p>Computer Engineering - Federal University of Maranhão</p>
-            <p class="date-div">2024 - 2026 (Present)</p>
-          </div>
-          <div class="custom-div">
-            <img src="./IMGS/mortarboard (2).png" alt="" />
-            <h3>Education</h3>
-            <p>Postgraduate Degree in Software Quality Management</p>
-            <p class="date-div">2025 - 05/2026</p>
-          </div>
-          <div class="custom-div">
-            <img src="./IMGS/mortarboard (2).png" alt="" />
-            <h3>Education</h3>
-            <p>Postgraduate Degree in Devops</p>
-            <p class="date-div">2025 - 05/2026</p>
-          </div>
-          
-          <div class="custom-3-div">
-            <img src="./IMGS/startup.png" alt="" />
-            <h3>Future Goals</h3>
-            <div class="list-grup">
-              <ul class="list-goals-1">
-                <li>Build efficient and innovative systems</li>
-                <li>Extract insights from complex data</li>
-                <li>Ensure digital system integrity</li>
-                <li>Implement scalable cloud solutions</li>
-                <li>Optimize CI/CD and agile infrastructure</li>
-              </ul>
-              <ul class="list-goals-2">
-                <li>Connect smart hardware and software</li>
-                <li>Lead teams with Agile/Scrum</li>
-                <li>Explore applicable new technologies</li>
-                <li>Design high-performance systems</li>
-                <li>Solve problems with strategic tech</li>
-              </ul>
-            </div>
+        <a href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV" class="button">
+          <span class="button_lg">
+            <span class="button_sl"></span>
+            <span class="button_text">Download CV</span>
+          </span>
+        </a>
+      </div>
+      <div class="info-right"><img src="./IMGS/profile-image.png" alt="" /></div>
+    </div>
+    <div class="scroll-down">
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+        type="module"></script>
+      <dotlottie-player src="https://lottie.host/2dcd5c23-6252-4332-981b-a07fde4909d9/CfI1zZyDCk.lottie"
+        background="transparent" speed="1" style="width: 100px; height: 100px" loop autoplay></dotlottie-player>
+    </div>
+    <div class="about-container loading partial-border" id="about">
+      <div class="universe"></div>
+      <h2>About Me</h2>
+      <p class="about-text">
+        I hold a Bachelor’s Degree in Science and Technology from the Federal University of Maranhão (UFMA)
+        and I am currently pursuing a Bachelor’s Degree in Computer Engineering at the same institution.
+        I also completed postgraduate degrees in Software Quality Management and DevOps, strengthening my background
+        in software engineering, automation, quality assurance, and modern development practices.
+
+      </p>
+      <div class="container-grup">
+        <div class="custom-div">
+          <img src="./IMGS/mortarboard (2).png" alt="" />
+          <h3>Education</h3>
+          <p>
+            Bachelor of Science and Technology <br> Federal University of
+            Maranhão
+          </p>
+          <p class="date-div">2019 - 2024</p>
+        </div>
+        <div class="custom-div">
+          <img src="./IMGS/mortarboard (2).png" alt="" />
+          <h3>Education</h3>
+          <p>Computer Engineering - Federal University of Maranhão</p>
+          <p class="date-div">2024 - 2026 (Present)</p>
+        </div>
+        <div class="custom-div">
+          <img src="./IMGS/mortarboard (2).png" alt="" />
+          <h3>Education</h3>
+          <p>Postgraduate Degree in Software Quality Management</p>
+          <p class="date-div">2025 - 05/2026</p>
+        </div>
+        <div class="custom-div">
+          <img src="./IMGS/mortarboard (2).png" alt="" />
+          <h3>Education</h3>
+          <p>Postgraduate Degree in Devops</p>
+          <p class="date-div">2025 - 05/2026</p>
+        </div>
+
+        <div class="custom-3-div">
+          <img src="./IMGS/startup.png" alt="" />
+          <h3>Future Goals</h3>
+          <div class="list-grup">
+            <ul class="list-goals-1">
+              <li>Build efficient and innovative systems</li>
+              <li>Extract insights from complex data</li>
+              <li>Ensure digital system integrity</li>
+              <li>Implement scalable cloud solutions</li>
+              <li>Optimize CI/CD and agile infrastructure</li>
+            </ul>
+            <ul class="list-goals-2">
+              <li>Connect smart hardware and software</li>
+              <li>Lead teams with Agile/Scrum</li>
+              <li>Explore applicable new technologies</li>
+              <li>Design high-performance systems</li>
+              <li>Solve problems with strategic tech</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="container-skills loading partial-border" id="skills"><h2>Skills</h2>
-        <div class="universe"></div>
-        <p>Technologies I use to develop high-performance web/desktop applications and engineer efficient solutions</p>
-        <div class="container-grup-skill-main">
+    </div>
+    <div class="container-skills loading partial-border" id="skills">
+      <h2>Skills</h2>
+      <div class="universe"></div>
+      <p>Technologies I use to develop high-performance web/desktop applications and engineer efficient solutions</p>
+      <div class="container-grup-skill-main">
         <div class="container-skill-grup">
           <div class="skill-box">
-              <span class="title"><img src="./IMGS/web-engineering.png" alt="">Web Engineering</span>
-                <div class="skill-bar">
-                  <span class="skill-per html">
-                      <span class="tooltip">90%</span>
-                  </span>
-              </div>
-          </div>
-            <div class="skill-box">
-              <span class="title"><img src="./IMGS/qa-eng.png" alt="">QA Engineering</span>
-  
-              <div class="skill-bar">
-                  <span class="skill-per css">
-                      <span class="tooltip">90%</span>
-                  </span>
-              </div>
+            <span class="title"><img src="./IMGS/web-engineering.png" alt="">Web Engineering</span>
+            <div class="skill-bar">
+              <span class="skill-per html">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
           </div>
           <div class="skill-box">
-              <span class="title"><img src="./IMGS/database.png" alt="">Databases Management Systems</span>
-  
-              <div class="skill-bar">
-                  <span class="skill-per javascript">
-                      <span class="tooltip">90%</span>
-                  </span>
-              </div>
+            <span class="title"><img src="./IMGS/qa-eng.png" alt="">QA Engineering</span>
+
+            <div class="skill-bar">
+              <span class="skill-per css">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
           </div>
           <div class="skill-box">
-              <span class="title"><img src="./IMGS/python.png" alt="">Python</span>
-                <div class="skill-bar">
-                  <span class="skill-per python">
-                      <span class="tooltip">90%</span>
-                  </span>
-              </div>
+            <span class="title"><img src="./IMGS/database.png" alt="">Databases Management Systems</span>
+
+            <div class="skill-bar">
+              <span class="skill-per javascript">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/python.png" alt="">Python</span>
+            <div class="skill-bar">
+              <span class="skill-per python">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
           </div>
           <div class="skill-box">
             <span class="title"><img src="./IMGS/framework (1).png" alt="">Frameworks</span>
 
             <div class="skill-bar">
-                <span class="skill-per vscode">
-                    <span class="tooltip">95%</span>
-                </span>
+              <span class="skill-per vscode">
+                <span class="tooltip">95%</span>
+              </span>
             </div>
-        </div>
-         <div class="skill-box">
+          </div>
+          <div class="skill-box">
             <span class="title"><img src="./IMGS/backend.png" alt="">Backend Engineering</span>
 
             <div class="skill-bar">
-                <span class="skill-per vscode">
-                    <span class="tooltip">95%</span>
-                </span>
+              <span class="skill-per vscode">
+                <span class="tooltip">95%</span>
+              </span>
             </div>
+          </div>
         </div>
-      </div>
-      <div class="container-skill-grup"><div class="skill-box">
-        <span class="title"><img src="./IMGS/vb.png" alt="">Vb.Net</span>
+        <div class="container-skill-grup">
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/vb.png" alt="">Vb.Net</span>
 
-        <div class="skill-bar">
-            <span class="skill-per vbnet">
+            <div class="skill-bar">
+              <span class="skill-per vbnet">
                 <span class="tooltip">85%</span>
-            </span>
-        </div>
-    </div>
-    <div class="skill-box">
-      <span class="title"><img src="./IMGS/github.png" alt="">Git</span>
-      <div class="skill-bar">
-          <span class="skill-per git">
-              <span class="tooltip">90%</span>
-          </span>
-      </div>
-  </div>
-  <div class="skill-box">
-    <span class="title"><img src="./IMGS/devops.png" alt="">DevOps & Tools</span>
-    <div class="skill-bar">
-        <span class="skill-per sql">
-            <span class="tooltip">90%</span>
-        </span>
-    </div>
-</div>
-<div class="skill-box">
-  <span class="title"><img src="./IMGS/software-development-.png" alt="">Software Development</span>
-  <div class="skill-bar">
-      <span class="skill-per software-development">
-          <span class="tooltip">90%</span>
-      </span>
-  </div>
-</div><div class="skill-box">
-  <span class="title"><img src="./IMGS/english.png" alt="">Fluent English</span>
-  <div class="skill-bar">
-      <span class="skill-per inglish">
-          <span class="tooltip">90%</span>
-      </span>
-  </div>
-</div>
-<div class="skill-box">
-  <span class="title"><img src="./IMGS/api (1).png" alt="">API</span>
-  <div class="skill-bar">
-      <span class="skill-per inglish">
-          <span class="tooltip">90%</span>
-      </span>
-  </div>
-</div></div>
-</div>
-      </div>
-      <div class="container-projects loading partial-border" id="projects">
-        <div class="universe"></div>
-        <h2>My Projects</h2>
-        <p class="descrition-projects">Some of my projects during my carrier</p>
-        <div class="container-grup-projects">
-          <div class="card">
-            <img src="./IMGS/customer-service-communication.jpg" alt="">
-            <div class="card-content">
-              <p class="card-title">ATC - CUSTOMER SERVICE</p>
-              <p class="card-description"> Application focused on contingency situations, with improvements in UX design and usability. Integration with the ADMS system was also implemented, optimizing the tool's efficiency. </p>
-                <div class="card-company">
-                  <span>Company: Equatorial Energia MA</span>
-                  <span class="exclusive">Acess: Company Exclusive</span>
-                </div>
-              <div class="card-tags">
-                <span>Microsoft Visual Studio</span>
-                <span>VB.Net</span>
-                <span>SQL</span>
-                <span>Front-End / Back-End</span>
-              </div>
-              <div class="card-actions">
-                <button class="card-button disable-button ">Visit Project</button>
-                <button class="card-button secondary disable-button ">Source Code</button>
-              </div>
+              </span>
             </div>
           </div>
-          <div class="card">
-            <img src="./IMGS/istockphoto-1364931222-612x612.jpg" alt="">
-            <div class="card-content">
-              <p class="card-title">PROINC - APPLICATION FOR CORRECTING INCONSISTENCIES</p>
-              <p class="card-description"> System developed for correcting inconsistencies, focusing on UX design and usability improvements. Integration with the ADMS system was also implemented, optimizing the tool's efficiency. </p>
-                <div class="card-company">
-                  <span>Company: Equatorial Energia MA</span>
-                  <span class="exclusive">Acess: Company Exclusive</span>
-                </div>
-              <div class="card-tags">
-                <span>Microsoft Visual Studio</span>
-                <span>VB.Net</span>
-                <span>SQL</span>
-                <span>Front-End / Back-End</span>
-                          </div>
-              <div class="card-actions">
-                <button class="card-button disable-button ">Visit Project</button>
-                <button class="card-button secondary disable-button ">Source Code</button>
-              </div>
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/github.png" alt="">Git</span>
+            <div class="skill-bar">
+              <span class="skill-per git">
+                <span class="tooltip">90%</span>
+              </span>
             </div>
           </div>
-          <div class="card">
-            <img src="./IMGS/form.jpg" alt="">
-            <div class="card-content">
-              <p class="card-title">Registration Form</p>
-              <p class="card-description"> The system aims to manage and automate the application, selection, and enrollment process of candidates for the program in an efficient and scalable way, ensuring accessibility, transparency, and information security. </p>
-                <div class="card-company">
-                  <span>Scholarship: Back-End Tracks</span>
-                </div>
-              <div class="card-tags">
-                <span>Visual Studio Code</span>
-                <span>Html</span>
-                <span>Css</span>
-                <span>JavaScript</span>
-                <span>Git</span>
-                <span>Front-End / Back-End</span>
-              </div>
-              <div class="card-actions">
-                <a href="https://trilha-back-end-desafio-3.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button">Visit Project</button></a>
-                <a href="https://github.com/FelipeAlmadaa/TrilhaBackEnd-Desafio-3" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button secondary">Source Code</button>
-                </a>
-              </div>
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/devops.png" alt="">DevOps & Tools</span>
+            <div class="skill-bar">
+              <span class="skill-per sql">
+                <span class="tooltip">90%</span>
+              </span>
             </div>
           </div>
-          <div class="card">
-            <img src="./IMGS/lixeiras.png" alt="">
-            <div class="card-content">
-              <p class="card-title">DC - Correct Disposal</p>
-              <p class="card-description"> Group project focused on the incorrect disposal of solid waste. We created a simple and interactive solution to inform, guide and encourage sustainable practices in our community. </p>
-                <div class="card-company">
-                  <span>Scholarship: Back-End Tracks</span>
-                  <span>Position: Vice-Leader</span>
-                </div>
-              <div class="card-tags">
-                <span>Visual Studio Code</span>
-                <span>Html</span>
-                <span>Css</span>
-                <span>JavaScript</span>
-                <span>Git</span>
-                <span>Front-End / Back-End</span>
-              </div>
-              <div class="card-actions">
-                <a href="https://descartecerto.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button">Visit Project</button></a>
-                <a href="https://github.com/FelipeAlmadaa/DC-Descarte-Certo" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button secondary">Source Code</button>
-                </a>
-              </div>
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/software-development-.png" alt="">Software Development</span>
+            <div class="skill-bar">
+              <span class="skill-per software-development">
+                <span class="tooltip">90%</span>
+              </span>
             </div>
           </div>
-          <div class="card">
-            <img src="./IMGS/Furia_Esports_logo.png" alt="">
-            <div class="card-content">
-              <p class="card-title">Know-Your-Fa-Furia</p>
-              <p class="card-description"> Know Your Fan is a Streamlit web app for registering FURIA fans, validating documents with OCR, analyzing Twitter (bio and tweets about FURIA), logging e-sports activities, and generating AI-based recommendations. Data is organized in tabs and saved locally in CSV and JSON.  </p>
-              
-              <div class="card-tags">
-                <span>Visual Studio Code</span>
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>PIL</span>
-                <span>Tesseract OCR</span>
-                <span>API</span>
-                <span>Git</span>
-                <span>Front-End / Back-End</span>
-              </div>
-              <div class="card-actions">  
-                  <button class="card-button disable-button">Visit Project</button>
-                <a href="https://github.com/FelipeAlmadaa/Know-your-fa-furia" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button secondary">Source Code</button>
-                </a>
-              </div>
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/english.png" alt="">Fluent English</span>
+            <div class="skill-bar">
+              <span class="skill-per inglish">
+                <span class="tooltip">90%</span>
+              </span>
             </div>
           </div>
-          <div class="card">
-            <img src="./IMGS/chatbot.png" alt="">
-            <div class="card-content">
-              <p class="card-title">ChatBot - Furia</p>
-              <p class="card-description"> The goal of FURIA Zone is to create an interactive platform that engages FURIA fans in a dynamic and informative environment. Through a chatbot, users can get information about the team, upcoming matches, and rankings. The platform aims to promote a direct communication channel between the team and its fanbase.  </p>
-                            <div class="card-tags">
-                <span>Visual Studio Code</span>
-                <span>Html</span>
-                <span>Css</span>
-                <span>JavaScript</span>
-                <span>Git</span>
-                <span>Front-End / Back-End</span>
-              </div>
-              <div class="card-actions">  
-                  <a href="https://chat-bot-furia-omega.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button">Visit Project</button></a>
-                <a href="https://github.com/FelipeAlmadaa/ChatBot-Furia" target="_blank" rel="noopener noreferrer">
-                  <button class="card-button secondary">Source Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./IMGS/QA-Manual-Testing-vs-Automation.png" alt="">
-            <div class="card-content">
-              <p class="card-title">QA Automation/Manual Engineer - Rally Project</p>
-              <p class="card-description"> I was focused on improving software reliability and testing efficiency.
-                My responsibilities included functional and regression testing, defect tracking, automation with Python, and collaboration with development teams.</p>
-                <div class="card-company">
-                  <span>Company: Digisystem</span>
-                  <span class="exclusive">Acess: Company Exclusive</span>
-                </div>
-                <div class="card-tags">
-                  <span>Functional Testing</span>
-                  <span>Regression Testing</span>
-                  <span>Python</span>
-                  <span>CI/CD</span>
-                  <span>SQL</span>
-                  <span>Defect Tracking</span>
-                  <span>Agile / Scrum</span>
-                  <span>Test Automation</span>
-              </div>
-              <div class="card-actions">
-                <button class="card-button disable-button ">Visit Project</button>
-                <button class="card-button secondary disable-button ">Source Code</button>
-              </div>
-                </a>
-              </div>
+          <div class="skill-box">
+            <span class="title"><img src="./IMGS/api (1).png" alt="">API</span>
+            <div class="skill-bar">
+              <span class="skill-per inglish">
+                <span class="tooltip">90%</span>
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer id="contact" class="loading partial-border">
+    </div>
+    <div class="container-projects loading partial-border" id="projects">
       <div class="universe"></div>
-      <h3 class="contact-text-footer">Contact</h2>
-       <div class="social-midia">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <h2>My Projects</h2>
+      <div class="container-grup-projects">
+        <div class="card">
+          <img src="./IMGS/customer-service-communication.jpg" alt="">
+          <div class="card-content">
+            <p class="card-title">ATC - CUSTOMER SERVICE</p>
+            <p class="card-description"> Application focused on contingency situations, with improvements in UX design
+              and usability. Integration with the ADMS system was also implemented, optimizing the tool's efficiency.
+            </p>
+            <div class="card-company">
+              <span>Company: Equatorial Energia MA</span>
+              <span class="exclusive">Acess: Company Exclusive</span>
+            </div>
+            <div class="card-tags">
+              <span>Microsoft Visual Studio</span>
+              <span>VB.Net</span>
+              <span>SQL</span>
+              <span>Front-End / Back-End</span>
+            </div>
+            <div class="card-actions">
+              <button class="card-button disable-button ">Visit Project</button>
+              <button class="card-button secondary disable-button ">Source Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./IMGS/istockphoto-1364931222-612x612.jpg" alt="">
+          <div class="card-content">
+            <p class="card-title">PROINC - APPLICATION FOR CORRECTING INCONSISTENCIES</p>
+            <p class="card-description"> System developed for correcting inconsistencies, focusing on UX design and
+              usability improvements. Integration with the ADMS system was also implemented, optimizing the tool's
+              efficiency. </p>
+            <div class="card-company">
+              <span>Company: Equatorial Energia MA</span>
+              <span class="exclusive">Acess: Company Exclusive</span>
+            </div>
+            <div class="card-tags">
+              <span>Microsoft Visual Studio</span>
+              <span>VB.Net</span>
+              <span>SQL</span>
+              <span>Front-End / Back-End</span>
+            </div>
+            <div class="card-actions">
+              <button class="card-button disable-button ">Visit Project</button>
+              <button class="card-button secondary disable-button ">Source Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./IMGS/form.jpg" alt="">
+          <div class="card-content">
+            <p class="card-title">Registration Form</p>
+            <p class="card-description"> The system aims to manage and automate the application, selection, and
+              enrollment process of candidates for the program in an efficient and scalable way, ensuring accessibility,
+              transparency, and information security. </p>
+            <div class="card-company">
+              <span>Scholarship: Back-End Tracks</span>
+            </div>
+            <div class="card-tags">
+              <span>Visual Studio Code</span>
+              <span>Html</span>
+              <span>Css</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+              <span>Front-End / Back-End</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://trilha-back-end-desafio-3.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button class="card-button">Visit Project</button></a>
+              <a href="https://github.com/FelipeAlmadaa/TrilhaBackEnd-Desafio-3" target="_blank"
+                rel="noopener noreferrer">
+                <button class="card-button secondary">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./IMGS/lixeiras.png" alt="">
+          <div class="card-content">
+            <p class="card-title">DC - Correct Disposal</p>
+            <p class="card-description"> Group project focused on the incorrect disposal of solid waste. We created a
+              simple and interactive solution to inform, guide and encourage sustainable practices in our community.
+            </p>
+            <div class="card-company">
+              <span>Scholarship: Back-End Tracks</span>
+              <span>Position: Vice-Leader</span>
+            </div>
+            <div class="card-tags">
+              <span>Visual Studio Code</span>
+              <span>Html</span>
+              <span>Css</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+              <span>Front-End / Back-End</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://descartecerto.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button class="card-button">Visit Project</button></a>
+              <a href="https://github.com/FelipeAlmadaa/DC-Descarte-Certo" target="_blank" rel="noopener noreferrer">
+                <button class="card-button secondary">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./IMGS/Furia_Esports_logo.png" alt="">
+          <div class="card-content">
+            <p class="card-title">Know-Your-Fa-Furia</p>
+            <p class="card-description"> Know Your Fan is a Streamlit web app for registering FURIA fans, validating
+              documents with OCR, analyzing Twitter (bio and tweets about FURIA), logging e-sports activities, and
+              generating AI-based recommendations. Data is organized in tabs and saved locally in CSV and JSON. </p>
+
+            <div class="card-tags">
+              <span>Visual Studio Code</span>
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>PIL</span>
+              <span>Tesseract OCR</span>
+              <span>API</span>
+              <span>Git</span>
+              <span>Front-End / Back-End</span>
+            </div>
+            <div class="card-actions">
+              <button class="card-button disable-button">Visit Project</button>
+              <a href="https://github.com/FelipeAlmadaa/Know-your-fa-furia" target="_blank" rel="noopener noreferrer">
+                <button class="card-button secondary">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./IMGS/chatbot.png" alt="">
+          <div class="card-content">
+            <p class="card-title">ChatBot - Furia</p>
+            <p class="card-description"> The goal of FURIA Zone is to create an interactive platform that engages FURIA
+              fans in a dynamic and informative environment. Through a chatbot, users can get information about the
+              team, upcoming matches, and rankings. The platform aims to promote a direct communication channel between
+              the team and its fanbase. </p>
+            <div class="card-tags">
+              <span>Visual Studio Code</span>
+              <span>Html</span>
+              <span>Css</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+              <span>Front-End / Back-End</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://chat-bot-furia-omega.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button class="card-button">Visit Project</button></a>
+              <a href="https://github.com/FelipeAlmadaa/ChatBot-Furia" target="_blank" rel="noopener noreferrer">
+                <button class="card-button secondary">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./IMGS/QA-Manual-Testing-vs-Automation.png" alt="">
+          <div class="card-content">
+            <p class="card-title">QA Automation/Manual Engineer - Rally Project</p>
+            <p class="card-description"> I was focused on improving software reliability and testing efficiency.
+              My responsibilities included functional and regression testing, defect tracking, automation with Python,
+              and collaboration with development teams.</p>
+            <div class="card-company">
+              <span>Company: Digisystem</span>
+              <span class="exclusive">Acess: Company Exclusive</span>
+            </div>
+            <div class="card-tags">
+              <span>Functional Testing</span>
+              <span>Regression Testing</span>
+              <span>Python</span>
+              <span>CI/CD</span>
+              <span>SQL</span>
+              <span>Defect Tracking</span>
+              <span>Agile / Scrum</span>
+              <span>Test Automation</span>
+            </div>
+            <div class="card-actions">
+              <button class="card-button disable-button ">Visit Project</button>
+              <button class="card-button secondary disable-button ">Source Code</button>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer id="contact" class="loading partial-border">
+    <div class="universe"></div>
+    <h3 class="contact-text-footer">Contact</h2>
+      <div class="social-midia">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <ul>
           <li>
             <a href="https://wa.me/+5598991334420" target="_blank">
@@ -463,18 +474,19 @@
             </a>
           </li>
         </ul>
-        
-       </div>
-       <p class="contact-text-footer">
-            If you have any questions or would like to discuss a project,
-            please feel free to reach out to me via email or through my social
-            media channels.
-          </p>
+
+      </div>
+      <p class="contact-text-footer">
+        If you have any questions or would like to discuss a project,
+        please feel free to reach out to me via email or through my social
+        media channels.
+      </p>
       <p class="contact-text-footer-2">&copy; 2026 Felipe Almada. All Rights Reserved.</p>
-    </footer>
-  </body>
-  <script src="/JS/skeleton.js"></script>
-  <script src="/JS/script.js"></script>
-  <script src="/JS/scroll-script.js"></script>
-  <script src="/JS/switch.js"></script>
+  </footer>
+</body>
+<script src="/JS/skeleton.js"></script>
+<script src="/JS/script.js"></script>
+<script src="/JS/scroll-script.js"></script>
+<script src="/JS/switch.js"></script>
+
 </html>
