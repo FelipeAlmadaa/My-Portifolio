@@ -41,7 +41,7 @@
 .custom-div {
   width: 480px;
   height: 300px;
-  border: 2px solid #e0dfdf;
+  border: 2px solid var(--text-color);
   border-radius: 20px;
   margin-right: 20px;
   display: flex;
@@ -90,7 +90,7 @@
 .custom-3-div {
   filter: brightness(2.2);
   padding-top: 20px;
-  border: solid 2px #e0dfdf;
+  border: solid 2px var(--text-color);
   width: 1000px;
   border-radius: 20px;
   margin-top: 10px;
