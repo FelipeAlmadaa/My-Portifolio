@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Check if a theme is saved in localStorage
   const savedTheme = localStorage.getItem("theme");
-  
+
   if (savedTheme === "light") {
     body.classList.add("light-mode");
-    if (themeToggleBtn) themeToggleBtn.textContent = "🌙";
+    if (themeToggleBtn) themeToggleBtn.textContent = "🌑";
   } else {
     // Default is dark mode
     if (themeToggleBtn) themeToggleBtn.textContent = "☀️";
@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener("click", () => {
       body.classList.toggle("light-mode");
-      
+
       const isLightMode = body.classList.contains("light-mode");
-      
+
       if (isLightMode) {
         localStorage.setItem("theme", "light");
-        themeToggleBtn.textContent = "🌙";
+        themeToggleBtn.textContent = "🌑";
       } else {
         localStorage.setItem("theme", "dark");
         themeToggleBtn.textContent = "☀️";

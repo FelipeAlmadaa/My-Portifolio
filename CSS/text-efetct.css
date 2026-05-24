@@ -2,6 +2,7 @@
   margin-left: -6px;
   padding: 0%;
 }
+
 .loader {
   font-weight: 500;
   font-size: 25px;
@@ -17,16 +18,15 @@
   overflow: hidden;
   position: relative;
 }
+
 .words::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    var(--bg-color) 10%,
-    transparent 30%,
-    transparent 70%,
-    var(--bg-color) 90%
-  );
+  background: linear-gradient(var(--bg-color) 10%,
+      transparent 30%,
+      transparent 70%,
+      var(--bg-color) 90%);
   z-index: 20;
 }
 
@@ -34,7 +34,7 @@
   display: block;
   height: 100%;
   padding-left: 6px;
-  color: #ffffff;
+  color: var(--text-color);
   animation: spin_4991 10s infinite;
 }
 
