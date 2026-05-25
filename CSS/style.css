@@ -12,18 +12,14 @@
   --text-color: #ffffff;
   --text-light-color: #1535c5;
   --hover-color: #69d678;
-  --skeleton-color-p-h2-span: linear-gradient(
-    120deg,
-    #c7c4c4 25%,
-    #eaeaea 50%,
-    #dddddd 75%
-  );
-  --skeleton-div: linear-gradient(
-    120deg,
-    #aaa8a8 25%,
-    #eaeaea 50%,
-    #787878 75%
-  );
+  --skeleton-color-p-h2-span: linear-gradient(120deg,
+      #c7c4c4 25%,
+      #eaeaea 50%,
+      #dddddd 75%);
+  --skeleton-div: linear-gradient(120deg,
+      #aaa8a8 25%,
+      #eaeaea 50%,
+      #787878 75%);
 }
 
 body.light-mode {
@@ -33,18 +29,14 @@ body.light-mode {
   --primary-color: #e5e5e5;
   --secondary-color: #555555;
   --hover-color: #3b8a45;
-  --skeleton-color-p-h2-span: linear-gradient(
-    120deg,
-    #dddddd 25%,
-    #f2f2f2 50%,
-    #eeeeee 75%
-  );
-  --skeleton-div: linear-gradient(
-    120deg,
-    #cccccc 25%,
-    #e6e6e6 50%,
-    #bbbbbb 75%
-  );
+  --skeleton-color-p-h2-span: linear-gradient(120deg,
+      #dddddd 25%,
+      #f2f2f2 50%,
+      #eeeeee 75%);
+  --skeleton-div: linear-gradient(120deg,
+      #cccccc 25%,
+      #e6e6e6 50%,
+      #bbbbbb 75%);
 }
 
 body {
@@ -76,6 +68,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1400px; /* largura da parte da borda */
+  width: 1400px;
+  /* largura da parte da borda */
   border-top: 2px solid rgba(74, 74, 74, 0.5);
 }
