@@ -67,6 +67,10 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+
+body.light-mode .skill-box img {
+  filter: brightness(0);
+}
 .skill-box .skill-bar {
   height: 8px;
   width: 100%;

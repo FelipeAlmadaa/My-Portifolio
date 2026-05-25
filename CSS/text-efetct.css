@@ -33,7 +33,7 @@
 .word {
   display: block;
   height: 100%;
-  padding-left: 6px;
+  padding-left: 0;
   color: var(--text-color);
   animation: spin_4991 10s infinite;
 }

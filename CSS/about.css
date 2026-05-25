@@ -25,7 +25,7 @@
   color: var(--text-color);
   text-align: justify;
   margin-top: -80%;
-    width: 52%;
+  width: 52%;
 }
 
 .container-grup {
@@ -69,6 +69,7 @@
   font-size: 1rem;
   color: var(--text-color);
 }
+
 .custom-div h3 {
   filter: brightness(2.2);
   font-size: 1.2rem;
@@ -83,6 +84,7 @@
   object-fit: cover;
   margin-bottom: 190px;
 }
+
 .date-div {
   margin-top: 120px;
 }
@@ -109,10 +111,16 @@
   text-align: center;
   margin-top: 20px;
 }
+
 .custom-3-div img {
   width: 50px;
   height: 50px;
   object-fit: cover;
+}
+
+body.light-mode .custom-div img,
+body.light-mode .custom-3-div img {
+  filter: brightness(0);
 }
 
 .list-grup {
@@ -122,11 +130,12 @@
   align-items: center;
   max-width: 100%;
 }
+
 .list-goals-1 {
   cursor: pointer;
   margin-top: -80px;
   margin-left: -100px;
-  list-style-type: "🎯 ";
+  list-style-type: "● ";
   text-align: left;
   color: var(--text-color);
   width: 350px;
@@ -139,7 +148,7 @@
 .list-goals-2 {
   cursor: pointer;
   margin-top: -80px;
-  list-style-type: "🎯 ";
+  list-style-type: "● ";
   text-align: left;
   color: var(--text-color);
   width: 350px;
@@ -152,19 +161,24 @@
 
 .list-goals-1 li:hover,
 .list-goals-2 li:hover {
-  transform: translateX(10px); /* Move o item 10px para a direita */
-  transition: transform 0.8s ease; /* Suaviza a transição */
+  transform: translateX(10px);
+  /* Move o item 10px para a direita */
+  transition: transform 0.8s ease;
+  /* Suaviza a transição */
 }
 
 .list-goals-1 li {
   margin-bottom: 15px;
 }
+
 .list-goals-2 li {
   margin-bottom: 15px;
 }
+
 .list-goals-1 li:hover {
   color: var(--hover-color);
 }
+
 .list-goals-2 li:hover {
   color: var(--hover-color);
 }
