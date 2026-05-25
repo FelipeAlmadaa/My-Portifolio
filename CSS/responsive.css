@@ -433,28 +433,21 @@
     filter: brightness(0.4);
   }
 
-  .card::after {
-    content: "View Details";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
-    font-weight: bold;
-    pointer-events: none;
-    z-index: 2;
+
+
+  .card-front-title {
     opacity: 0;
     transition: opacity 1.6s ease;
+    transform: none !important;
   }
 
-  .card.is-center::after {
-    opacity: 1;
+  .card.is-center:not(.is-flipped) .card-front-title {
+    opacity: 1 !important;
   }
 
-  .card:hover::after,
-  .card:active::after {
+  .card.is-flipped .card-front-title {
     opacity: 0 !important;
+    transition: none !important;
   }
 
   .card-title {
@@ -496,6 +489,10 @@
     width: 90%;
     text-align: center;
     font-size: 0.9rem;
+  }
+
+  footer p.contact-text-footer {
+    text-align: justify;
   }
 
   footer .social-midia ul {

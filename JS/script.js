@@ -12,3 +12,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+document.querySelectorAll('.card').forEach((card) => {
+  card.addEventListener('click', function (e) {
+    // Only toggle if the click wasn't on a button or link
+    if (!e.target.closest('a') && !e.target.closest('button')) {
+      this.classList.toggle('is-flipped');
+    }
+  });
+});
