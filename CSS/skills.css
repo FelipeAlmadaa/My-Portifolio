@@ -6,7 +6,6 @@
   justify-content: center;
   max-width: 100%;
   height: 800px;
-  margin: 150px auto 0 auto;
 }
 
 .container-grup-skill-main {
@@ -27,12 +26,14 @@
   color: var(--text-color);
   margin-top: -20%;
 }
+
 .container-skills p {
   margin-bottom: -180px;
   text-align: center;
   font-size: 1.1rem;
   color: var(--text-color);
 }
+
 .container-skill-grup {
   position: relative;
   max-width: 500px;
@@ -49,6 +50,7 @@
   transition: transform 0.5s ease;
   border-color: var(--text-light-color);
 }
+
 .container-skill-grup .skill-box {
   width: 100%;
   margin: 25px 0;
@@ -71,6 +73,7 @@
 body.light-mode .skill-box img {
   filter: brightness(0);
 }
+
 .skill-box .skill-bar {
   height: 8px;
   width: 100%;
@@ -109,6 +112,7 @@ body.light-mode .skill-box img {
   width: 80%;
   animation-delay: 0.3s;
 }
+
 .skill-per.vscode {
   width: 95%;
   animation-delay: 0.3s;
