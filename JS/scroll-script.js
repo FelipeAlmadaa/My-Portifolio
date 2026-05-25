@@ -42,4 +42,26 @@ document.addEventListener("DOMContentLoaded", function () {
     bar.style.width = "0";
     skillsObserver.observe(bar);
   });
+
+  // Track cards for mobile center-screen hint visibility
+  const cardObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-center");
+        } else {
+          entry.target.classList.remove("is-center");
+        }
+      });
+    },
+    {
+      // Triggers when the element overlaps the middle 20% of the viewport height
+      rootMargin: "-40% 0px -40% 0px",
+      threshold: 0,
+    }
+  );
+
+  document.querySelectorAll(".card").forEach((card) => {
+    cardObserver.observe(card);
+  });
 });

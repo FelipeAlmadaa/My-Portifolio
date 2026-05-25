@@ -67,6 +67,11 @@ p {
   justify-content: center;
 }
 
+/* Hidden on desktop, shown only on mobile */
+.img-mobile {
+  display: none;
+}
+
 body.light-mode .scroll-down {
   filter: invert(0.8);
 }
