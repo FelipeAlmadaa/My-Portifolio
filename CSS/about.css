@@ -159,26 +159,15 @@ body.light-mode .custom-3-div img {
   font-size: 1rem;
 }
 
+.list-goals-1 li,
+.list-goals-2 li {
+  margin-bottom: 15px;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
 .list-goals-1 li:hover,
 .list-goals-2 li:hover {
   transform: translateX(10px);
-  /* Move o item 10px para a direita */
-  transition: transform 0.8s ease;
-  /* Suaviza a transição */
-}
+  color: #1535c5;
 
-.list-goals-1 li {
-  margin-bottom: 15px;
-}
-
-.list-goals-2 li {
-  margin-bottom: 15px;
-}
-
-.list-goals-1 li:hover {
-  color: var(--hover-color);
-}
-
-.list-goals-2 li:hover {
-  color: var(--hover-color);
 }
