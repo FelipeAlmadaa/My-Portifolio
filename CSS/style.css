@@ -85,3 +85,36 @@ body.light-mode .highlight-blue {
   /* largura da parte da borda */
   border-top: 2px solid rgba(74, 74, 74, 0.5);
 }
+
+/* =============================================
+   Vanta.js Background
+   [DISABLED - UNCOMMENT TO ACTIVATE VANTA]
+   ============================================= */
+/*
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body {
+  background-color: transparent !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.light-mode::before {
+  background: rgba(255, 255, 255, 0.15);
+}
+*/

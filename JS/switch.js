@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", "dark");
         themeToggleBtn.textContent = "☀️";
       }
+
+      // Re-initialize Vanta background with new theme colors
+      if (typeof window.reinitVanta === "function") {
+        window.reinitVanta();
+      }
     });
   }
 });
