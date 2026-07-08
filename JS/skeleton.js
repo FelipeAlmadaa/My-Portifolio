@@ -1,27 +1,11 @@
 window.addEventListener("load", function () {
-  const home = document.getElementById(
-    "home",
-    "about",
-    "skills",
-    "projects",
-    "contact"
-  );
+  // Remove loading state from all sections
+  const sections = document.querySelectorAll("#home, #about, #skills, #projects, #contact");
+  sections.forEach((el) => el.classList.remove("loading"));
 
-  home.classList.remove("loading");
-  about.classList.remove("loading");
-  skills.classList.remove("loading");
-  projects.classList.remove("loading");
-  contact.classList.remove("loading");
-
-  // Mostra a imagem suavemente
-  const img = home.querySelector(
-    ".info-right img",
-    "#about img",
-    "#skills img",
-    "#projects img",
-    "#contact img"
-  );
-  img.forEach((img) => {
+  // Fade in profile images smoothly
+  const imgs = document.querySelectorAll(".info-right img, .photo-wrapper img");
+  imgs.forEach((img) => {
     img.style.opacity = "1";
   });
 });

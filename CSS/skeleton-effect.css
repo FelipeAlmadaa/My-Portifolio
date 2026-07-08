@@ -101,13 +101,13 @@
 .container-skills.loading p {
   background: var(--skeleton-color-p-h2-span);
   background-size: 300% 100%;
-  width: 30%;
+  width: 50%;
+  max-width: 400px;
   animation: shimmer 2.5s infinite ease-in-out;
   color: transparent;
   border-radius: 4px;
   height: 20px;
-  margin-bottom: -240px;
-  margin-left: 1180px;
+  margin: 0 auto 24px;
 }
 
 .container-skills.loading .title {
@@ -229,12 +229,12 @@
 .loading .contact-text-footer {
   color: transparent !important;
   background: linear-gradient(90deg, #ccc 25%, #e0e0e0 50%, #ccc 75%);
-  width: 280px; /* ou ajustado pro tamanho de cada span */
+  width: 280px;
   height: 16px;
   animation: shimmer 2s infinite linear;
   background-size: 200% 100%;
   border-radius: 4px;
-  margin-left: 1555px;
+  margin: 0 auto;
 }
 
 .loading svg {
