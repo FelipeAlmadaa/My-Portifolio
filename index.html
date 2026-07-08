@@ -51,9 +51,9 @@
     </div>
   </header>
 
-  <main>
+  <main class="bento-grid">
     <!-- Hero / Home -->
-    <div class="container-home loading" id="home">
+    <div class="bento-card col-span-12 lg-col-span-8 container-home loading" id="home">
       <div class="universe"></div>
 
       <div class="info-left">
@@ -98,22 +98,19 @@
         </div>
       </div>
 
-      <div class="info-right">
-        <div class="photo-wrapper">
-          <img src="./IMGS/eu3.jpg" alt="Felipe Almada" />
-        </div>
+    </div>
+
+    <!-- Photo Card (Bento Grid Sibling) -->
+    <div class="info-right bento-card col-span-12 lg-col-span-4 photo-card">
+      <div class="photo-wrapper">
+        <img src="./IMGS/eu3.jpg" alt="Felipe Almada" />
       </div>
     </div>
 
-    <!-- Scroll Down -->
-    <div class="scroll-down">
-      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-      <dotlottie-player src="https://lottie.host/2dcd5c23-6252-4332-981b-a07fde4909d9/CfI1zZyDCk.lottie"
-        background="transparent" speed="1" style="width: 100px; height: 100px" loop autoplay></dotlottie-player>
-    </div>
+
 
     <!-- About -->
-    <div class="about-container loading partial-border" id="about">
+    <div class="bento-card col-span-12 lg-col-span-12 about-container loading partial-border" id="about">
       <div class="universe"></div>
 
       <div class="about-header">
@@ -181,7 +178,7 @@
     </div>
 
     <!-- Skills -->
-    <div class="container-skills loading partial-border" id="skills">
+    <div class="bento-card col-span-12 lg-col-span-12 container-skills loading partial-border" id="skills">
       <div class="universe"></div>
 
       <div class="skills-header">
@@ -249,7 +246,7 @@
     </div>
 
     <!-- Projects -->
-    <div class="container-projects loading partial-border" id="projects">
+    <div class="bento-card col-span-12 lg-col-span-12 container-projects loading partial-border" id="projects">
       <div class="universe"></div>
 
       <div class="projects-header">

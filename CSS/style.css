@@ -6,21 +6,21 @@
 
 :root {
   /* Core Colors */
-  --bg-deep:        #020817;
-  --bg-surface:     #0d1117;
+  --bg-deep:        #030914;
+  --bg-surface:     #0a1122;
   --bg-card:        rgba(255, 255, 255, 0.03);
-  --bg-card-hover:  rgba(255, 255, 255, 0.06);
+  --bg-card-hover:  rgba(255, 255, 255, 0.07);
 
-  /* Accent — Indigo/Violet */
-  --accent-primary:   #6366f1;
-  --accent-secondary: #8b5cf6;
-  --accent-glow:      rgba(99, 102, 241, 0.35);
-  --accent-gradient:  linear-gradient(135deg, #6366f1, #8b5cf6);
+  /* Accent — Cyan/Emerald */
+  --accent-primary:   #008b8b;
+  --accent-secondary: #006400;
+  --accent-glow:      rgba(0, 139, 139, 0.25);
+  --accent-gradient:  linear-gradient(135deg, #008b8b, #006400);
 
   /* Text */
-  --text-primary:   #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted:     #475569;
+  --text-primary:   #ffffff;
+  --text-secondary: #a0aec0;
+  --text-muted:     #4a5568;
 
   /* Glass */
   --glass-bg:       rgba(15, 20, 40, 0.75);
@@ -37,13 +37,13 @@
   --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.25);
 
   /* Legacy mappings (keep scripts working) */
-  --primary-color:   #0d1117;
-  --secondary-color: #94a3b8;
-  --background-color: #0d1117;
-  --background-black: #020817;
-  --text-color:      #f1f5f9;
-  --text-light-color: #6366f1;
-  --hover-color:     #8b5cf6;
+  --primary-color:   #0a1122;
+  --secondary-color: #a0aec0;
+  --background-color: #0a1122;
+  --background-black: #030914;
+  --text-color:      #ffffff;
+  --text-light-color: #00f0ff;
+  --hover-color:     #00ff88;
 
   /* Skeleton */
   --skeleton-color-p-h2-span: linear-gradient(120deg, #1e293b 25%, #334155 50%, #1e293b 75%);
@@ -57,9 +57,9 @@ body.light-mode {
   --bg-card:        rgba(0, 0, 0, 0.02);
   --bg-card-hover:  rgba(0, 0, 0, 0.05);
 
-  --accent-primary:   #4f46e5;
-  --accent-secondary: #7c3aed;
-  --accent-glow:      rgba(79, 70, 229, 0.2);
+  --accent-primary:   #008b8b;
+  --accent-secondary: #006400;
+  --accent-glow:      rgba(0, 139, 139, 0.2);
 
   --text-primary:   #0f172a;
   --text-secondary: #475569;
@@ -247,4 +247,46 @@ body.light-mode::before { background: rgba(255, 255, 255, 0.15); }
 /* --- Global justified text --- */
 p, li {
   text-align: justify;
+}
+
+/* ─── Bento Box Grid System ─── */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  max-width: 1300px;
+  margin: 100px auto 40px; /* 100px top margin to clear header */
+  padding: 0 24px;
+}
+
+.bento-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Grid Spans */
+.col-span-12 { grid-column: span 12; }
+.col-span-8 { grid-column: span 12; }
+.col-span-6 { grid-column: span 12; }
+.col-span-4 { grid-column: span 12; }
+
+@media (min-width: 992px) {
+  .lg-col-span-12 { grid-column: span 12; }
+  .lg-col-span-8 { grid-column: span 8; }
+  .lg-col-span-6 { grid-column: span 6; }
+  .lg-col-span-4 { grid-column: span 4; }
+  .lg-col-span-3 { grid-column: span 3; }
 }
