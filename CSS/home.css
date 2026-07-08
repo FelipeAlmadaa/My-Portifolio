@@ -1,77 +1,252 @@
+/* ─── Main wrapper ─── */
 main {
-  margin-top: 100px;
-  align-items: center;
+  margin-top: 68px;
 }
 
+/* ─── Hero Section ─── */
 .container-home {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 60px;
   max-width: 1100px;
-  height: 850px;
+  min-height: calc(100vh - 68px);
+  padding: 60px 24px;
   margin: 0 auto;
+  position: relative;
 }
 
+/* ─── Left Info ─── */
 .info-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 60%;
-  height: 100%;
-  color: var(--text-color);
+  flex: 1;
+  max-width: 560px;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
 }
 
-.info-right {
+/* ─── Available Badge ─── */
+.available-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: var(--accent-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  animation: slide-in-badge 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.available-badge .dot {
+  width: 7px;
+  height: 7px;
+  background: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #22c55e;
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* ─── Hero Heading ─── */
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+h2 .name-highlight {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* ─── Typing Loader ─── */
+.loader {
+  margin: 10px 0 16px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.words {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  width: 60%;
-  height: 100%;
+  animation: spin-words 15s infinite ease;
 }
 
-.info-right img {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: -36px;
-  border: 3px solid white;
+.word {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent-primary);
+  line-height: 32px;
+  padding: 0;
 }
 
-h2 {
-  font-size: 2.5rem;
-  color: var(--text-color);
-  margin-bottom: 10px;
+@keyframes spin-words {
+  0%    { transform: translateY(0);    }
+  14%   { transform: translateY(0);    }
+  16%   { transform: translateY(-32px); }
+  30%   { transform: translateY(-32px); }
+  32%   { transform: translateY(-64px); }
+  48%   { transform: translateY(-64px); }
+  50%   { transform: translateY(-96px); }
+  64%   { transform: translateY(-96px); }
+  66%   { transform: translateY(-128px);}
+  80%   { transform: translateY(-128px);}
+  82%   { transform: translateY(-160px);}
+  96%   { transform: translateY(-160px);}
+  98%   { transform: translateY(0);    }
+  100%  { transform: translateY(0);    }
 }
 
-h2 span {
-  color: var(--text-light-color);
-}
-
+/* ─── Bio text ─── */
 p {
-  color: var(--text-color);
-  text-align: justify;
-  font-size: 1.1rem;
-  margin-top: 10px;
+  color: var(--text-secondary);
+  font-size: 0.97rem;
+  line-height: 1.75;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 0;
+  max-width: 480px;
 }
 
-.scroll-down {
-  padding-bottom: 0px;
-  margin-top: -130px;
-  margin-bottom: 0px;
+/* ─── CTA Buttons ─── */
+.hero-actions {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
 }
 
-/* Hidden on desktop, shown only on mobile */
-.img-mobile {
+/* Download CV button (legacy .button) */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.button_lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-gradient);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--accent-glow);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.button_lg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transform: skewX(-20deg);
+  animation: shimmer 2.5s ease-in-out infinite;
+}
+
+.button_lg:hover {
+  box-shadow: 0 6px 28px rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+.button_sl {
   display: none;
 }
 
+.button_text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ─── Right Info — Profile Photo ─── */
+.info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animated gradient border wrapper */
+.photo-wrapper {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  flex-shrink: 0;
+}
+
+.photo-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #6366f1, #8b5cf6, #06b6d4, #6366f1);
+  animation: rotateBorder 5s linear infinite;
+  z-index: 0;
+}
+
+.photo-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg, #8b5cf6, #6366f1, #06b6d4, #8b5cf6);
+  animation: rotateBorder 5s linear infinite reverse;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.info-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  border: 4px solid var(--bg-deep);
+  box-shadow: var(--shadow-md), inset 0 0 0 4px var(--bg-deep);
+  animation: float 5s ease-in-out infinite;
+}
+
+/* ─── Scroll Down ─── */
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0 0;
+  margin-top: -40px;
+}
+
 body.light-mode .scroll-down {
-  filter: invert(0.8);
+  filter: invert(0.7);
+}
+
+/* ─── Mobile-only profile image ─── */
+.img-mobile {
+  display: none;
 }

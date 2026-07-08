@@ -1,173 +1,226 @@
+/* ─── About Section ─── */
 .about-container {
-  /* border-top: 2px solid rgba(74, 74, 74, 0.5); */
-  background-color: var(--background-black);
+  background-color: var(--bg-deep);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   max-width: 100%;
-  height: 1562px;
-  margin: 150px auto 0 auto;
+  padding: 100px 24px 80px;
+  margin: 0 auto;
 }
 
-.about-container h2 {
-  position: absolute;
-  align-self: center;
-  font-size: 1.4rem;
-  color: var(--text-color);
-  margin-top: -26%;
-  margin-bottom: 20px;
+/* ─── Section header ─── */
+.about-header {
+  text-align: center;
+  margin-bottom: 48px;
 }
 
+/* ─── About text ─── */
 .about-text {
-  position: absolute;
-  align-self: center;
   font-size: 1rem;
-  color: var(--text-color);
-  text-align: justify;
-  margin-top: -80%;
-  width: 52%;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.8;
+  margin: 0 auto 60px;
+  position: static; /* was absolute — removed */
 }
 
+/* ─── Cards Grid ─── */
 .container-grup {
   display: grid;
-  grid-template-columns: repeat(2, 500px);
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  margin-top: 290px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto 24px;
 }
 
+/* ─── Education Card ─── */
 .custom-div {
-  width: 480px;
-  height: 300px;
-  border: 2px solid var(--text-color);
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
-  margin-right: 20px;
+  padding: 32px 24px 28px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  transition: transform 0.5s ease, border-color 0.5s ease;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.custom-div::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .custom-div:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease;
-  border-color: var(--text-light-color);
+  transform: translateY(-6px);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
 }
 
-.custom-3-div:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease;
-  border-color: var(--text-light-color);
-}
-
-.custom-div p {
-  position: absolute;
-  text-align: center;
-  font-size: 1rem;
-  color: var(--text-color);
-}
-
-.custom-div h3 {
-  filter: brightness(2.2);
-  font-size: 1.2rem;
-  color: var(--text-light-color);
-  margin-bottom: 110px;
+.custom-div:hover::before {
+  opacity: 1;
 }
 
 .custom-div img {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  margin-bottom: 190px;
-}
-
-.date-div {
-  margin-top: 120px;
-}
-
-.custom-3-div {
-  filter: brightness(2.2);
-  padding-top: 20px;
-  border: solid 2px var(--text-color);
-  width: 1000px;
-  border-radius: 20px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 20px;
-  transition: transform 0.5s ease, border-color 0.5s ease;
-}
-
-.custom-3-div h3 {
-  font-size: 1.2rem;
-  color: var(--text-light-color);
-  margin-bottom: 110px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.custom-3-div img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  position: static;
+  filter: hue-rotate(200deg) brightness(1.5);
 }
 
 body.light-mode .custom-div img,
 body.light-mode .custom-3-div img {
-  filter: brightness(0);
+  filter: brightness(0.3) hue-rotate(200deg);
 }
 
+.custom-div h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  filter: none;
+  margin-bottom: 10px;
+}
+
+.custom-div p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  text-align: left;
+  position: static;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.date-div {
+  margin-top: 12px !important;
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+  font-weight: 500;
+}
+
+/* ─── Future Goals Card (full width) ─── */
+.custom-3-div {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 32px 40px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.custom-3-div::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-3-div:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+}
+
+.custom-3-div:hover::before {
+  opacity: 1;
+}
+
+.custom-3-div img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  filter: hue-rotate(200deg) brightness(1.5);
+}
+
+.custom-3-div h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ─── Goals Lists ─── */
 .list-grup {
   display: grid;
-  grid-template-columns: repeat(2, 300px);
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 40px;
+  width: 100%;
+  max-width: 760px;
 }
 
-.list-goals-1 {
-  cursor: pointer;
-  margin-top: -80px;
-  margin-left: -100px;
-  list-style-type: "● ";
-  text-align: left;
-  color: var(--text-color);
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 1rem;
-}
-
+.list-goals-1,
 .list-goals-2 {
-  cursor: pointer;
-  margin-top: -80px;
-  list-style-type: "● ";
-  text-align: left;
-  color: var(--text-color);
-  width: 350px;
+  cursor: default;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 120px;
-  font-size: 1rem;
+  gap: 10px;
 }
 
 .list-goals-1 li,
 .list-goals-2 li {
-  margin-bottom: 15px;
-  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, filter 0.4s ease-in-out;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.list-goals-1 li::before,
+.list-goals-2 li::before {
+  content: "→";
+  color: var(--accent-primary);
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  margin-top: 1px;
 }
 
 .list-goals-1 li:hover,
 .list-goals-2 li:hover {
-  transform: translateX(10px);
-  color: #1535c5;
-
+  color: var(--text-primary);
+  transform: translateX(4px);
 }

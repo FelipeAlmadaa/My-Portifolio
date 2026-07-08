@@ -1,95 +1,142 @@
+/* ─── Footer / Contact ─── */
 footer {
-  /* border-top: 2px solid rgba(77, 157, 2, 0.5); */
-  height: 200px;
-  margin-top: 150px;
-  padding: 20px;
+  position: relative;
+  padding: 80px 24px 40px;
   text-align: center;
+  margin-top: 0;
+  height: auto;
+  background: linear-gradient(to bottom, var(--bg-deep), var(--bg-surface));
+  overflow: hidden;
 }
-footer h3 {
-  font-size: 1.4rem;
-  color: var(--text-color);
-  margin-bottom: 20px;
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(600px, 80vw);
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent-primary), transparent);
+  opacity: 0.6;
 }
-footer p {
-  padding: 20px;
-  margin-top: 100px;
-  margin-bottom: 23px;
-  font-size: 1rem;
+
+/* ─── CTA Text ─── */
+.footer-cta {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.footer-cta span {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-text-footer {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+/* Paragraph under icons */
+footer > p,
+footer .contact-text-footer:not(h3) {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  max-width: 440px;
+  margin: 0 auto 8px;
   text-align: center;
-  color: var(--text-color);
+  padding: 0;
+  line-height: 1.7;
 }
+
 .contact-text-footer-2 {
-  margin-top: -20px;
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+  margin-top: 32px !important;
 }
+
+/* ─── Social Icons ─── */
+.social-midia {
+  margin: 36px 0 24px;
+}
+
 .social-midia ul {
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  position: static;
+  transform: none;
+  top: auto; left: auto;
 }
 
 .social-midia ul li {
-  padding: 20px;
   list-style: none;
-  margin-top: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 .social-midia ul li a {
-  width: 60px;
-  height: 60px;
-  background-color: var(--text-color);
-  text-align: center;
-  line-height: 60px;
-  font-size: 28px;
-  display: block;
-  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  font-size: 20px;
   position: relative;
   overflow: hidden;
-  border: 3px solid var(--text-color);
-  z-index: 1;
-  transition: 0.3s;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease,
+              background 0.3s ease;
+  text-decoration: none;
 }
+
 .social-midia ul li a .icon {
   position: relative;
-  color: var(--background-color);
-  transition: 0.5s;
-  z-index: 3;
+  z-index: 2;
+  color: var(--text-secondary);
+  transition: color 0.3s ease, transform 0.4s ease;
+}
+
+.social-midia ul li a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.social-midia ul li a:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+}
+
+.social-midia ul li a:hover::before {
+  opacity: 1;
 }
 
 .social-midia ul li a:hover .icon {
   color: #fff;
-  transform: rotateY(360deg);
+  transform: rotate(8deg) scale(1.1);
 }
 
-.social-midia ul li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.5s;
-  z-index: 2;
-}
-
-.social-midia ul li a:hover:before {
-  top: 0;
-}
-
-.social-midia ul li:nth-child(1) a:before {
-  background: #1c9a28; /* WhatsApp */
-}
-
-.social-midia ul li:nth-child(2) a:before {
-  background: #933100; /* E-mail */
-}
-
-.social-midia ul li:nth-child(3) a:before {
-  background: #0077b5; /* LinkedIn */
-}
-
-.social-midia ul li:nth-child(4) a:before {
-  background: #333; /* GitHub */
-}
+/* Per-platform accent color on hover */
+.social-midia ul li:nth-child(1) a:hover::before { background: linear-gradient(135deg, #25d366, #128c7e); }
+.social-midia ul li:nth-child(2) a:hover::before { background: linear-gradient(135deg, #ea4335, #c5221f); }
+.social-midia ul li:nth-child(3) a:hover::before { background: linear-gradient(135deg, #0a66c2, #0057a8); }
+.social-midia ul li:nth-child(4) a:hover::before { background: linear-gradient(135deg, #333, #000); }
