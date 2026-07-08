@@ -117,7 +117,7 @@ p {
   color: var(--text-secondary);
   font-size: 0.97rem;
   line-height: 1.75;
-  text-align: left;
+  text-align: justify;
   margin-top: 8px;
   margin-bottom: 0;
   max-width: 480px;

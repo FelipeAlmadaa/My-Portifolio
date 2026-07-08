@@ -95,7 +95,7 @@
   }
 
   .info-left p {
-    text-align: center;
+    text-align: justify;
     max-width: 100%;
   }
 
@@ -140,7 +140,7 @@
 
   .about-text {
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 0.9rem;
   }
 
@@ -155,7 +155,7 @@
   }
 
   .custom-div p {
-    text-align: center;
+    text-align: justify;
   }
 
   .list-goals-1,
