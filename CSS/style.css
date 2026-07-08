@@ -244,3 +244,7 @@ body::before {
 }
 body.light-mode::before { background: rgba(255, 255, 255, 0.15); }
 */
+/* --- Global justified text --- */
+p, li {
+  text-align: justify;
+}
