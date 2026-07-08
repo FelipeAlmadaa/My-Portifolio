@@ -30,6 +30,10 @@
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .container-grup-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ─── Mobile ─── */
