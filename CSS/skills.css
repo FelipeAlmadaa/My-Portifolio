@@ -80,14 +80,15 @@
   margin-bottom: 20px;
 }
 
-.skill-category-header img {
+.skill-icon {
   width: 28px;
   height: 28px;
-  object-fit: contain;
+  color: var(--accent-primary);
+  flex-shrink: 0;
 }
 
-body.light-mode .skill-category-header img {
-  filter: brightness(0.2);
+body.light-mode .skill-icon {
+  filter: brightness(0.8);
 }
 
 .skill-category-header h3 {
