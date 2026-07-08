@@ -44,40 +44,59 @@
   background: var(--bg-card);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  aspect-ratio: 16 / 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  aspect-ratio: unset;
+  min-height: 220px;
+  display: grid;
+  grid-template-rows: 220px auto;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.4s ease,
               box-shadow 0.4s ease;
 }
 
+
 .card:hover {
-  transform: translateY(-6px) scale(1.01);
+  transform: translateY(-4px);
   border-color: rgba(99, 102, 241, 0.4);
   box-shadow: 0 20px 50px rgba(99, 102, 241, 0.2),
               0 0 0 1px rgba(99, 102, 241, 0.15);
 }
 
 /* ─── Card Image ─── */
-.card img {
-  object-fit: cover;
+.card-img-wrap {
+  position: relative;
   width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  filter: brightness(0.5) saturate(0.7);
-  transition: filter 0.4s ease, transform 0.4s ease;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
 
-.card:hover img {
-  filter: brightness(0.25) saturate(0.5);
+.card-img-wrap img,
+.card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+  border-radius: 20px 20px 0 0;
+  filter: brightness(0.55) saturate(0.8);
+  transition: filter 0.4s ease, transform 0.4s ease;
+  display: block;
+}
+
+.card:hover > img,
+.card:hover .card-img-wrap img {
+  filter: brightness(0.4) saturate(0.6);
   transform: scale(1.04);
 }
 
-/* ─── Front Title (visible before hover) ─── */
+/* ─── Front Title (sits over the image) ─── */
+.card {
+  position: relative; /* needed for absolute front-title */
+}
+
 .card-front-title {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
@@ -93,43 +112,51 @@
   pointer-events: none;
   max-width: 80%;
   line-height: 1.4;
+  /* limit to image height zone */
+  top: 110px;
 }
 
 .card:hover .card-front-title,
 .card.is-flipped .card-front-title {
   opacity: 0;
-  transform: translateY(-8px);
+  transform: translate(-50%, calc(-50% - 8px));
 }
 
-/* ─── Card Content (revealed on hover) ─── */
+/* ─── Card Content (always shown below image on desktop) ─── */
 .card-content {
-  position: absolute;
-  inset: 0;
-  padding: 24px;
-  background: rgba(13, 17, 23, 0.96);
+  position: relative;
+  padding: 20px;
+  background: var(--bg-surface);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transform: translateY(100%);
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-  border-radius: 20px;
+  gap: 8px;
+  border-radius: 0 0 20px 20px;
   z-index: 3;
+  /* hidden by default, slides up on hover */
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.4s ease,
+              padding 0.4s ease;
 }
 
 body.light-mode .card-content {
-  background: rgba(248, 250, 252, 0.97);
+  background: rgba(248, 250, 252, 0.99);
 }
 
+/* Reveal on hover or is-flipped (desktop) */
 @media (min-width: 769px) {
-  .card:hover .card-content {
-    transform: translateY(0);
+  .card:hover .card-content,
+  .card.is-flipped .card-content {
+    max-height: 500px;
+    opacity: 1;
+    padding: 20px;
   }
-}
-
-.card.is-flipped .card-content {
-  transform: translateY(0);
 }
 
 /* ─── Card Inner Content ─── */
