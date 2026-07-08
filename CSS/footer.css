@@ -51,7 +51,7 @@ footer .contact-text-footer:not(h3) {
   color: var(--text-secondary);
   max-width: 440px;
   margin: 0 auto 8px;
-  text-align: justify;
+  text-align: center;
   padding: 0;
   line-height: 1.7;
 }
