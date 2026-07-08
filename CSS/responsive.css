@@ -26,6 +26,10 @@
   .container-grup {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ─── Mobile ─── */
@@ -177,7 +181,7 @@
     padding: 60px 20px 60px;
   }
 
-  .container-grup-skill-main {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
