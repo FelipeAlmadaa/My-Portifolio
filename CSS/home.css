@@ -84,32 +84,36 @@ h2 .name-highlight {
 .words {
   display: flex;
   flex-direction: column;
-  animation: spin-words 15s infinite ease;
+  animation: spin-words 14s linear infinite;
 }
 
 .word {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--accent-primary);
+  color: white;
   line-height: 32px;
+  flex-shrink: 0;
   padding: 0;
 }
 
+/* 7 items (6 + 1 clone). Each item shows for ~14/6 ≈ 2.33s.
+   Transition between each: 0.3s slide. Loop resets invisibly at 100%. */
 @keyframes spin-words {
-  0%    { transform: translateY(0);    }
-  14%   { transform: translateY(0);    }
-  16%   { transform: translateY(-32px); }
-  30%   { transform: translateY(-32px); }
-  32%   { transform: translateY(-64px); }
-  48%   { transform: translateY(-64px); }
-  50%   { transform: translateY(-96px); }
-  64%   { transform: translateY(-96px); }
-  66%   { transform: translateY(-128px);}
-  80%   { transform: translateY(-128px);}
-  82%   { transform: translateY(-160px);}
-  96%   { transform: translateY(-160px);}
-  98%   { transform: translateY(0);    }
-  100%  { transform: translateY(0);    }
+  0%         { transform: translateY(0px);    }
+  13%        { transform: translateY(0px);    }
+  16%        { transform: translateY(-32px);  }
+  29%        { transform: translateY(-32px);  }
+  32%        { transform: translateY(-64px);  }
+  46%        { transform: translateY(-64px);  }
+  49%        { transform: translateY(-96px);  }
+  62%        { transform: translateY(-96px);  }
+  65%        { transform: translateY(-128px); }
+  79%        { transform: translateY(-128px); }
+  82%        { transform: translateY(-160px); }
+  96%        { transform: translateY(-160px); }
+  99%        { transform: translateY(-192px); }
+  99.001%    { transform: translateY(0px);    }
+  100%       { transform: translateY(0px);    }
 }
 
 /* ─── Bio text ─── */
