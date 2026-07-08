@@ -197,6 +197,7 @@ body.light-mode .highlight-blue {
 }
 
 .section-title {
+  display: none;
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 700;
   color: var(--text-primary);
