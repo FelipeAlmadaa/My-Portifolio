@@ -133,6 +133,7 @@ body.light-mode .card-content {
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.35;
+  text-align: center;
 }
 
 .card-description {
@@ -140,6 +141,7 @@ body.light-mode .card-content {
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
+  text-align: justify;
 }
 
 /* ─── Card Company ─── */
