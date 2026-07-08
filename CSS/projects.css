@@ -83,23 +83,25 @@
   transform: scale(1.04);
 }
 
-/* ─── Title overlaid on image ─── */
+/* ─── Title overlaid on image — centered ─── */
 .card-front-title {
   position: absolute;
-  bottom: 14px;
-  left: 14px;
-  right: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
   color: #fff;
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.4;
+  text-align: center;
   z-index: 2;
-  padding: 10px 14px;
-  border-radius: 10px;
+  padding: 12px 16px;
+  border-radius: 12px;
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   pointer-events: none;
 }
 
@@ -127,13 +129,9 @@ body.light-mode .card-content {
   color: var(--text-primary);
 }
 
+/* card-title hidden — title is shown on the image via card-front-title */
 .card-title {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.35;
-  text-align: center;
+  display: none;
 }
 
 .card-description {
