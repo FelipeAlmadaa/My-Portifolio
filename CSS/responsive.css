@@ -5,6 +5,7 @@
 
 /* ─── Hide cursor on touch devices ─── */
 @media (hover: none) {
+
   .cursor-dot,
   .cursor-ring {
     display: none !important;
@@ -43,7 +44,9 @@
     max-width: 100%;
   }
 
-  br { display: none; }
+  br {
+    display: none;
+  }
 
   /* ── Cursor ── */
   .cursor-dot,
@@ -209,7 +212,7 @@
   }
 
   .card-img-zone img,
-  .card > img:first-child {
+  .card>img:first-child {
     height: 180px;
   }
 
