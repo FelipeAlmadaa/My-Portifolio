@@ -27,12 +27,12 @@
 /* ─── Cards Grid ─── */
 .container-grup-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* ─── Card ─── */
@@ -105,13 +105,13 @@
   pointer-events: none;
 }
 
-/* ─── Card Content — always visible ─── */
 .card-content {
   position: static;
   padding: 20px;
   background: var(--bg-surface);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 10px;
   border-radius: 0;
   transform: none !important;
@@ -200,7 +200,7 @@ body.light-mode .card-content {
 .card-actions {
   display: flex;
   gap: 10px;
-  margin-top: 4px;
+  margin-top: auto;
 }
 
 .card-button {
