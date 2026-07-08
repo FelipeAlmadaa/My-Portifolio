@@ -150,10 +150,6 @@ body.light-mode .card-content {
   color: var(--text-secondary);
   line-height: 1.55;
   margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 /* ─── Card Company ─── */

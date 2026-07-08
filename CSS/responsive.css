@@ -192,26 +192,32 @@
   }
 
   .card {
-    aspect-ratio: auto;
-    min-height: 260px;
+    aspect-ratio: unset;
+    height: auto;
+    min-height: unset;
   }
 
   .card img {
-    filter: brightness(0.4);
+    display: none;
   }
 
   .card-front-title {
-    font-size: 0.88rem;
-    opacity: 0;
-  }
-
-  .card.is-center:not(.is-flipped) .card-front-title {
-    opacity: 1;
+    display: none;
   }
 
   .card-content {
-    transform: translateY(0);
-    background: rgba(13, 17, 23, 0.95);
+    transform: translateY(0) !important;
+    position: static;
+    background: rgba(13, 17, 23, 0.97);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  body.light-mode .card-content {
+    background: rgba(248, 250, 252, 0.99);
   }
 
   .card-title {
