@@ -10,6 +10,7 @@
   cursor: pointer;
   position: relative;
   padding: 8px;
+  margin-left: -8px; /* Fixes left alignment with text */
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
