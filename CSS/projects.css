@@ -73,13 +73,13 @@
   height: 200px;
   object-fit: cover;
   display: block;
-  filter: brightness(0.55) saturate(0.8);
+  filter: brightness(0.25) saturate(0.8);
   transition: filter 0.35s ease, transform 0.35s ease;
 }
 
 .card:hover .card-img-zone img,
 .card:hover > img:first-child {
-  filter: brightness(0.45) saturate(0.7);
+  filter: brightness(0.18) saturate(0.7);
   transform: scale(1.04);
 }
 
