@@ -1,774 +1,344 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description"
-    content="Felipe Almada - Senior Software &amp; QA Automation Engineer. Portfolio showcasing projects in Python, VB.NET, CI/CD, and more." />
-  <title>FA | Portfolio</title>
+    content="Felipe Almada — QA Automation Engineer / SDET. Quality is not a phase, it's the whole build." />
+  <title>FELIPE ALMADA — QA / SDET</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
     rel="stylesheet" />
   <link rel="icon" type="image/png" href="./IMGS/codigo-html (1).png">
-
-  <!-- Core Styles -->
-  <link rel="stylesheet" href="./CSS/style.css" />
-  <link rel="stylesheet" href="./CSS/animations.css" />
-  <link rel="stylesheet" href="./CSS/header.css" />
-  <link rel="stylesheet" href="./CSS/home.css" />
-  <link rel="stylesheet" href="./CSS/text-efetct.css" />
-  <link rel="stylesheet" href="./CSS/highlight-text.css" />
-  <link rel="stylesheet" href="./CSS/about.css" />
-  <link rel="stylesheet" href="./CSS/skills.css" />
-  <link rel="stylesheet" href="./CSS/projects.css">
-  <link rel="stylesheet" href="./CSS/skeleton-effect.css">
-  <link rel="stylesheet" href="./CSS/background-universe.css">
-  <link rel="stylesheet" href="./CSS/footer.css">
-  <link rel="stylesheet" href="./CSS/responsive.css">
-  <link rel="stylesheet" href="./CSS/download-cv.css">
+  <link rel="stylesheet" href="./CSS/alt-layout.css" />
 </head>
 
 <body>
 
-  <!-- Custom Cursor -->
-  <div class="cursor-dot" id="cursorDot"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <header id="mainHeader">
-    <div class="container-header">
-      <h1>FA</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Light Mode">&#9728;&#65039;</button></li>
-        </ul>
-      </nav>
+  <!-- Preloader: the test suite boots the site -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-terminal mono">
+      <p>$ npx run portfolio --env=production</p>
+      <p class="pre-line">✓ design system .......... <span class="ok">PASS</span></p>
+      <p class="pre-line">✓ typography ............. <span class="ok">PASS</span></p>
+      <p class="pre-line">✓ projects ............... <span class="ok">PASS</span></p>
+      <p class="pre-line">✓ quality gate ........... <span class="ok">PASS</span></p>
+      <p class="pre-line preloader-final">4 passed, 0 failed — deploying…</p>
     </div>
+  </div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <a class="logo mono" href="#top">FA<span class="accent">.</span>LOG</a>
+    <nav class="site-nav mono">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="header-status mono"><span class="pulse-dot"></span>BUILD PASSING</div>
   </header>
 
-  <main>
-    <!-- Hero / Home -->
-    <div class="container-home loading" id="home">
-      <div class="universe"></div>
+  <main id="top">
 
-      <div class="info-left">
-        <div class="available-badge">
-          <span class="dot"></span>
-          Available for Work
-        </div>
-
-        <h2>
-          Hi, I'm<br />
-          <span class="name-highlight skeleton-box skeleton-title">Felipe Almada</span>
-        </h2>
-
-        <div class="loader">
-          <div class="words">
-            <span class="word">Senior Software Engineer</span>
-            <span class="word">Senior QA Automation Engineer</span>
-            <span class="word">Bachelor of Science and Technology</span>
-            <span class="word">Bachelor of Computer Engineering</span>
-            <span class="word">Postgraduate in Software Quality</span>
-            <span class="word">Postgraduate in DevOps</span>
-            <span class="word">Senior Software Engineer</span>
-          </div>
-        </div>
-
-        <img src="./IMGS/eu3.jpg" alt="Felipe Almada" class="img-mobile" />
-
-        <p>
-          Senior Backend and QA Engineer with 5+ years of experience developing scalable backend and automation
-          solutions using Python, VB.NET, and JavaScript.<br />
-          <span class="msg-shine">Skilled in implementing CI/CD pipelines and test automation to improve software
-            reliability and delivery speed, experienced in agile environments with strong collaboration and
-            problem-solving skills.</span>
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <p class="hero-kicker mono reveal">// QA AUTOMATION ENGINEER — SDET</p>
+      <h1 class="hero-title">
+        <span class="line reveal">FELIPE</span>
+        <span class="line line-indent reveal"><em>ALMADA</em><span class="cursor-block">▮</span></span>
+      </h1>
+      <div class="hero-bottom">
+        <p class="hero-manifesto reveal">
+          I break software on purpose — so your users never do.
+          5+ years engineering <strong>test automation</strong>, <strong>CI/CD</strong> and
+          <strong>backend</strong> systems that ship with confidence.
         </p>
-
-        <div class="hero-actions">
-          <a href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV" class="button">
-            <span class="button_lg">
-              <span class="button_sl"></span>
-              <span class="button_text">&#8675; Download CV</span>
-            </span>
-          </a>
+        <div class="hero-meta mono reveal">
+          <p>BASED IN BRAZIL — WORKING WORLDWIDE</p>
+          <p><span class="pulse-dot"></span>AVAILABLE FOR WORK</p>
+          <a class="hero-cv" href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV">DOWNLOAD CV ↓</a>
         </div>
       </div>
+      <div class="scroll-hint mono" aria-hidden="true">SCROLL ↓</div>
+    </section>
 
-      <div class="info-right">
-        <div class="photo-wrapper">
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>PLAYWRIGHT ✦ TYPESCRIPT ✦ API TESTING ✦ CI/CD ✦ PYTHON ✦ K6 ✦ MANUAL TESTING ✦ UAT ✦ PYTEST ✦ DEVOPS ✦&nbsp;</span>
+        <span>PLAYWRIGHT ✦ TYPESCRIPT ✦ API TESTING ✦ CI/CD ✦ PYTHON ✦ K6 ✦ MANUAL TESTING ✦ UAT ✦ PYTEST ✦ DEVOPS ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section class="about" id="about">
+      <div class="section-head reveal">
+        <span class="section-index mono">01</span>
+        <h2 class="section-title">WHO<br /><em>I AM</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <figure class="about-photo reveal">
           <img src="./IMGS/eu3.jpg" alt="Felipe Almada" />
-        </div>
-      </div>
-    </div>
+          <figcaption class="mono">felipe.almada — est. 1999</figcaption>
+        </figure>
 
-    <!-- Scroll Down -->
-    <div class="scroll-down">
-      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-        type="module"></script>
-      <dotlottie-player src="https://lottie.host/2dcd5c23-6252-4332-981b-a07fde4909d9/CfI1zZyDCk.lottie"
-        background="transparent" speed="1" style="width: 100px; height: 100px" loop autoplay></dotlottie-player>
-    </div>
+        <div class="about-copy">
+          <p class="about-lead reveal">
+            Senior Backend &amp; QA Engineer. I hold a degree in <strong>Science and Technology</strong>,
+            I'm finishing <strong>Computer Engineering</strong> at UFMA, and I completed postgraduate degrees in
+            <strong>Software Quality Management</strong> and <strong>DevOps</strong>.
+          </p>
+          <p class="about-text reveal">
+            My work lives where development meets reliability: Python, TypeScript and JavaScript on one side —
+            Playwright, Pytest, K6 and CI/CD pipelines on the other. Agile by habit, curious by default.
+          </p>
 
-    <!-- About -->
-    <div class="about-container loading partial-border" id="about">
-      <div class="universe"></div>
-
-      <div class="about-header">
-        <div class="section-label">About Me</div>
-        <h2 class="section-title">Who I Am</h2>
-      </div>
-
-      <p class="about-text">
-        I hold a Bachelor's Degree in <span class="highlight-blue">Science and Technology</span> from the Federal
-        University of Maranhao (UFMA) and I am currently pursuing a Bachelor's Degree in
-        <span class="highlight-blue">Computer Engineering</span> at the same institution.
-        I also completed postgraduate degrees in <span class="highlight-blue">Software Quality Management</span> and
-        <span class="highlight-blue">DevOps</span>, strengthening my background in
-        <span class="highlight-blue">software engineering</span>, <span class="highlight-blue">automation</span>,
-        <span class="highlight-blue">quality assurance</span>, and modern development practices.
-      </p>
-
-      <div class="container-grup">
-        <div class="custom-div">
-          <img src="./IMGS/mortarboard (2).png" alt="Education" />
-          <h3>Education</h3>
-          <p>Science and Technology - Federal University of Maranhao</p>
-          <p class="date-div">2019 - 2024</p>
-        </div>
-        <div class="custom-div">
-          <img src="./IMGS/mortarboard (2).png" alt="Education" />
-          <h3>Education</h3>
-          <p>Computer Engineering - Federal University of Maranhao</p>
-          <p class="date-div">2024 - 2026 (Present)</p>
-        </div>
-        <div class="custom-div">
-          <img src="./IMGS/mortarboard (2).png" alt="Education" />
-          <h3>Education</h3>
-          <p>Postgraduate Degree in Software Quality Management</p>
-          <p class="date-div">10/2025 - 05/2026</p>
-        </div>
-        <div class="custom-div">
-          <img src="./IMGS/mortarboard (2).png" alt="Education" />
-          <h3>Education</h3>
-          <p>Postgraduate Degree in DevOps</p>
-          <p class="date-div">10/2025 - 05/2026</p>
+          <div class="stats reveal">
+            <div class="stat">
+              <span class="stat-number">5<span class="accent">+</span></span>
+              <span class="stat-label mono">YEARS OF EXPERIENCE</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12</span>
+              <span class="stat-label mono">PROJECTS SHIPPED</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label mono">DEGREES &amp; POSTGRADS</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">0</span>
+              <span class="stat-label mono">BUGS LEFT BEHIND*</span>
+            </div>
+          </div>
+          <p class="stats-footnote mono reveal">* none that survived regression.</p>
         </div>
       </div>
 
-      <div class="custom-3-div">
-        <img src="./IMGS/startup.png" alt="Future Goals" />
-        <h3>Future Goals</h3>
-        <div class="list-grup">
-          <ul class="list-goals-1">
-            <li>Build efficient and innovative systems</li>
-            <li>Extract insights from complex data</li>
-            <li>Ensure digital system integrity</li>
-            <li>Implement scalable cloud solutions</li>
-            <li>Optimize CI/CD and agile infrastructure</li>
-          </ul>
-          <ul class="list-goals-2">
-            <li>Connect smart hardware and software</li>
-            <li>Lead teams with Agile/Scrum</li>
-            <li>Explore applicable new technologies</li>
-            <li>Design high-performance systems</li>
-            <li>Solve problems with strategic tech</li>
-          </ul>
+      <!-- Education ledger -->
+      <div class="ledger reveal">
+        <div class="ledger-row">
+          <span class="ledger-index mono">E1</span>
+          <span class="ledger-title">Science and Technology</span>
+          <span class="ledger-place mono">UFMA</span>
+          <span class="ledger-date mono">2019—2024</span>
+        </div>
+        <div class="ledger-row">
+          <span class="ledger-index mono">E2</span>
+          <span class="ledger-title">Computer Engineering</span>
+          <span class="ledger-place mono">UFMA</span>
+          <span class="ledger-date mono">2024—NOW</span>
+        </div>
+        <div class="ledger-row">
+          <span class="ledger-index mono">E3</span>
+          <span class="ledger-title">Postgrad · Software Quality Management</span>
+          <span class="ledger-place mono">POSTGRAD</span>
+          <span class="ledger-date mono">2025—2026</span>
+        </div>
+        <div class="ledger-row">
+          <span class="ledger-index mono">E4</span>
+          <span class="ledger-title">Postgrad · DevOps</span>
+          <span class="ledger-place mono">POSTGRAD</span>
+          <span class="ledger-date mono">2025—2026</span>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Skills -->
-    <div class="container-skills loading partial-border" id="skills">
-      <div class="universe"></div>
-
-      <div class="skills-header">
-        <div class="section-label">Expertise</div>
-        <h2 class="section-title">Skills</h2>
+    <!-- ══════════ SKILLS ══════════ -->
+    <section class="skills" id="skills">
+      <div class="section-head reveal">
+        <span class="section-index mono">02</span>
+        <h2 class="section-title">WHAT<br /><em>I RUN</em></h2>
       </div>
 
-      <p>Technologies I use to develop high-performance web/desktop applications and engineer efficient solutions</p>
-
-      <div class="skills-grid">
-        <!-- Programming Languages -->
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <svg class="skill-icon" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-            <h3>Programming Languages</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Python</span>
-            <span class="skill-chip">JavaScript</span>
-            <span class="skill-chip">TypeScript</span>
-            <span class="skill-chip">VB.NET</span>
-            <span class="skill-chip">C#</span>
-          </div>
+      <div class="skill-rows">
+        <div class="skill-row reveal">
+          <span class="skill-index mono">S1</span>
+          <h3 class="skill-name">Test Automation</h3>
+          <p class="skill-chips mono">Playwright / Selenium / Cypress / Pytest / K6 / E2E / API / Performance</p>
         </div>
-
-        <!-- Backend Development -->
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <svg class="skill-icon" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-              <line x1="6" y1="6" x2="6.01" y2="6"></line>
-              <line x1="6" y1="18" x2="6.01" y2="18"></line>
-            </svg>
-            <h3>Backend Development</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Django</span>
-            <span class="skill-chip">Node.js</span>
-            <span class="skill-chip">RESTful API</span>
-            <span class="skill-chip">Scalable Systems</span>
-            <span class="skill-chip">Microservices</span>
-            <span class="skill-chip">Clean Architecture</span>
-            <span class="skill-chip">System Integration</span>
-          </div>
+        <div class="skill-row reveal">
+          <span class="skill-index mono">S2</span>
+          <h3 class="skill-name">QA &amp; Manual Testing</h3>
+          <p class="skill-chips mono">Test Planning / Test Cases / UAT / Functional / Regression / Contract / Risk-Based / Defects</p>
         </div>
-
-        <!-- Databases -->
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <svg class="skill-icon" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-            </svg>
-            <h3>Databases &amp; Data</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">PostgreSQL</span>
-            <span class="skill-chip">MySQL</span>
-            <span class="skill-chip">MongoDB</span>
-            <span class="skill-chip">SQL Optimization</span>
-            <span class="skill-chip">Power BI</span>
-            <span class="skill-chip">Prompt Engineering</span>
-          </div>
+        <div class="skill-row reveal">
+          <span class="skill-index mono">S3</span>
+          <h3 class="skill-name">Languages</h3>
+          <p class="skill-chips mono">Python / TypeScript / JavaScript / C# / VB.NET</p>
         </div>
-
-        <!-- QA & Automation -->
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <svg class="skill-icon" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="8" height="14" x="8" y="6" rx="4"></rect>
-              <path d="m19 7-3 2"></path>
-              <path d="m5 7 3 2"></path>
-              <path d="m19 19-3-2"></path>
-              <path d="m5 19 3-2"></path>
-              <path d="M20 13h-4"></path>
-              <path d="M4 13h4"></path>
-              <path d="m10 4 1 2"></path>
-              <path d="m14 4-1 2"></path>
-            </svg>
-            <h3>Test Automation</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Playwright</span>
-            <span class="skill-chip">Selenium</span>
-            <span class="skill-chip">Cypress</span>
-            <span class="skill-chip">Pytest</span>
-            <span class="skill-chip">K6</span>
-            <span class="skill-chip">E2E Testing</span>
-            <span class="skill-chip">API Testing</span>
-            <span class="skill-chip">Performance Testing</span>
-          </div>
+        <div class="skill-row reveal">
+          <span class="skill-index mono">S4</span>
+          <h3 class="skill-name">Backend</h3>
+          <p class="skill-chips mono">Django / Node.js / REST / Microservices / Clean Architecture / System Integration</p>
         </div>
-
-        <!-- DevOps & Tools -->
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <svg class="skill-icon" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-            </svg>
-            <h3>DevOps & Tools</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">CI/CD</span>
-            <span class="skill-chip">GitHub Actions</span>
-            <span class="skill-chip">Docker</span>
-            <span class="skill-chip">Kubernetes</span>
-            <span class="skill-chip">AWS</span>
-            <span class="skill-chip">Git</span>
-            <span class="skill-chip">MCP</span>
-            <span class="skill-chip">Jira / ServiceNow</span>
-            <span class="skill-chip">Agile / Scrum / Kanban</span>
-          </div>
+        <div class="skill-row reveal">
+          <span class="skill-index mono">S5</span>
+          <h3 class="skill-name">DevOps &amp; Tools</h3>
+          <p class="skill-chips mono">CI/CD / GitHub Actions / Docker / Kubernetes / AWS / Git / Jira / Agile</p>
         </div>
-
-        <!-- Additional -->
-        <div class="skill-category-card">
-          <div class="skill-category-header">
-            <svg class="skill-icon" width="28" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 12 12 17 22 12"></polyline>
-              <polyline points="2 17 12 22 22 17"></polyline>
-            </svg>
-            <h3>QA &amp; Manual Testing</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Manual Testing</span>
-            <span class="skill-chip">UAT</span>
-            <span class="skill-chip">Test Planning</span>
-            <span class="skill-chip">Test Case Design</span>
-            <span class="skill-chip">Functional Testing</span>
-            <span class="skill-chip">Regression Testing</span>
-            <span class="skill-chip">Contract Testing</span>
-            <span class="skill-chip">Defect Tracking</span>
-            <span class="skill-chip">Risk-Based Testing</span>
-          </div>
+        <div class="skill-row reveal">
+          <span class="skill-index mono">S6</span>
+          <h3 class="skill-name">Data</h3>
+          <p class="skill-chips mono">PostgreSQL / MySQL / MongoDB / SQL Optimization / Power BI</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Projects -->
-    <div class="container-projects loading partial-border" id="projects">
-      <div class="universe"></div>
-
-      <div class="projects-header">
-        <div class="section-label">Portfolio</div>
-        <h2 class="section-title">Projects &amp; Experience</h2>
+    <!-- ══════════ WORK ══════════ -->
+    <section class="work" id="work">
+      <div class="section-head reveal">
+        <span class="section-index mono">03</span>
+        <h2 class="section-title">SELECTED<br /><em>WORK</em></h2>
       </div>
 
-      <div class="container-grup-projects">
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop"
-              alt="QA/SDET SaaS Platform Testing">
-            <h3 class="card-front-title">QA/SDET SaaS Platform Testing</h3>
+      <div class="work-list">
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/qa-sdet-saas-platform-testing" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">01</span>
+          <div class="work-info">
+            <h3 class="work-title">QA/SDET SaaS Platform Testing</h3>
+            <p class="work-tags mono">PLAYWRIGHT · TYPESCRIPT · API · MULTI-TENANT · CI/CD</p>
           </div>
-          <div class="card-content">
-            <p class="card-title">QA/SDET SaaS Platform Testing</p>
-            <p class="card-description">Complete QA/SDET project for a simulated multi-tenant SaaS platform: 45 automated E2E and API tests with Playwright and TypeScript covering onboarding, authentication, payment flows and tenant isolation, plus full manual QA docs (test plan, UAT, risk analysis) and CI/CD.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>Playwright</span><span>TypeScript</span><span>API Testing</span>
-              <span>SaaS</span><span>Multi-Tenant</span><span>CI/CD</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/qa-sdet-saas-platform-testing" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
+          <span class="work-year mono">2026</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/performance-testing-k6-api" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">02</span>
+          <div class="work-info">
+            <h3 class="work-title">K6 API Performance Testing</h3>
+            <p class="work-tags mono">K6 · JAVASCRIPT · LOAD / STRESS / SPIKE · THRESHOLDS</p>
           </div>
+          <span class="work-year mono">2026</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/api-testing-pytest-reqres" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">03</span>
+          <div class="work-info">
+            <h3 class="work-title">Reqres API Testing with Pytest</h3>
+            <p class="work-tags mono">PYTHON · PYTEST · SCHEMA VALIDATION · CI/CD</p>
+          </div>
+          <span class="work-year mono">2025</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/playwright-python-saucedemo-tests" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">04</span>
+          <div class="work-info">
+            <h3 class="work-title">Playwright Python E2E Automation</h3>
+            <p class="work-tags mono">PYTHON · PLAYWRIGHT · POM · ALLURE</p>
+          </div>
+          <span class="work-year mono">2025</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="work-row work-row-static reveal">
+          <span class="work-index mono">05</span>
+          <div class="work-info">
+            <h3 class="work-title">Rally Project — QA Engineer</h3>
+            <p class="work-tags mono">DIGISYSTEM · FUNCTIONAL · REGRESSION · PYTHON · SQL</p>
+          </div>
+          <span class="work-year mono">COMPANY</span>
+          <span class="work-arrow work-lock mono" aria-hidden="true">NDA</span>
         </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
-              alt="Performance Testing with K6">
-            <h3 class="card-front-title">K6 API Performance Testing</h3>
+        <div class="work-row work-row-static reveal">
+          <span class="work-index mono">06</span>
+          <div class="work-info">
+            <h3 class="work-title">ATC — Customer Service</h3>
+            <p class="work-tags mono">EQUATORIAL ENERGIA · VB.NET · SQL · ADMS</p>
           </div>
-          <div class="card-content">
-            <p class="card-title">K6 API Performance Testing</p>
-            <p class="card-description">Professional load, stress, spike, and smoke testing suite built with Grafana K6 and JavaScript. Validates API resilience with automated thresholds and CI/CD integration.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>JavaScript</span><span>K6</span><span>Performance</span>
-              <span>CI/CD</span><span>Load Testing</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/performance-testing-k6-api" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
+          <span class="work-year mono">COMPANY</span>
+          <span class="work-arrow work-lock mono" aria-hidden="true">NDA</span>
         </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=600&auto=format&fit=crop"
-              alt="Reqres API Testing">
-            <h3 class="card-front-title">Reqres API Testing with Pytest</h3>
+        <div class="work-row work-row-static reveal">
+          <span class="work-index mono">07</span>
+          <div class="work-info">
+            <h3 class="work-title">PROINC — Correcting Inconsistencies</h3>
+            <p class="work-tags mono">EQUATORIAL ENERGIA · VB.NET · SQL · UX</p>
           </div>
-          <div class="card-content">
-            <p class="card-title">Reqres API Testing with Pytest</p>
-            <p class="card-description">Automated REST API testing suite using Python, Pytest, and Requests, featuring JSON schema validation, dynamic test data, HTML reports, and CI/CD via GitHub Actions.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>Python</span><span>Pytest</span><span>Requests</span>
-              <span>CI/CD</span><span>API Testing</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/api-testing-pytest-reqres" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
+          <span class="work-year mono">COMPANY</span>
+          <span class="work-arrow work-lock mono" aria-hidden="true">NDA</span>
         </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
-              alt="Playwright Python Automation">
-            <h3 class="card-front-title">Playwright Python E2E Automation</h3>
+        <a class="work-row reveal" href="https://descartecerto.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">08</span>
+          <div class="work-info">
+            <h3 class="work-title">DC — Correct Disposal</h3>
+            <p class="work-tags mono">HTML · CSS · JS · TEAM VICE-LEADER</p>
           </div>
-          <div class="card-content">
-            <p class="card-title">Playwright Python E2E Automation</p>
-            <p class="card-description">End-to-end test automation framework built for Sauce Demo using Python, Pytest,
-              Playwright, Page Object Model, and Allure Report, with CI/CD execution via GitHub Actions.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>Python</span><span>Playwright</span><span>Pytest</span>
-              <span>POM</span><span>Allure</span><span>GitHub Actions</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/playwright-python-saucedemo-tests" target="_blank"
-                class="card-button secondary"
-                style="text-decoration: none; display: flex; align-items: center; justify-content: center;">Source
-                Code</a>
-            </div>
+          <span class="work-year mono">LIVE</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/Know-your-fa-furia" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">09</span>
+          <div class="work-info">
+            <h3 class="work-title">Know-Your-Fa-Furia</h3>
+            <p class="work-tags mono">HTML · CSS · JAVASCRIPT · FAN PLATFORM</p>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/backpack_game.png" alt="Backpack Game Project">
-            <h3 class="card-front-title">Backpack Game Project</h3>
+          <span class="work-year mono">2025</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://trilha-back-end-desafio-3.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">10</span>
+          <div class="work-info">
+            <h3 class="work-title">Registration Form System</h3>
+            <p class="work-tags mono">HTML · CSS · JAVASCRIPT · LIVE</p>
           </div>
-          <div class="card-content">
-            <p class="card-title">Backpack Game Project</p>
-            <p class="card-description">An inventory management game prototype focusing on a backpack system, featuring
-              item organization and strategic placement mechanics.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>C#</span><span>Game Dev</span><span>UI / UX</span><span>Logic</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/BackpackGameProject" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
+          <span class="work-year mono">LIVE</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/Carteira_de_Vacina" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">11</span>
+          <div class="work-info">
+            <h3 class="work-title">Vaccine Card</h3>
+            <p class="work-tags mono">HTML · CSS · JAVASCRIPT</p>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/qa_automation_new.png" alt="QA Automation Project">
-            <h3 class="card-front-title">QA Automation/Manual Engineer - Rally Project</h3>
+          <span class="work-year mono">2024</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="work-row reveal" href="https://github.com/FelipeAlmadaa/BackpackGameProject" target="_blank" rel="noopener noreferrer">
+          <span class="work-index mono">12</span>
+          <div class="work-info">
+            <h3 class="work-title">Backpack Game Project</h3>
+            <p class="work-tags mono">C# · GAME DEV · INVENTORY LOGIC</p>
           </div>
-          <div class="card-content">
-            <p class="card-title">QA Automation/Manual Engineer - Rally Project</p>
-            <p class="card-description">Focused on improving software reliability and testing efficiency.
-              Responsibilities included functional and regression testing, defect tracking, automation with Python, and
-              collaboration with development teams.</p>
-            <div class="card-company">
-              <span>Company: Digisystem</span>
-              <span class="exclusive">Company Exclusive</span>
-            </div>
-            <div class="card-tags">
-              <span>Functional Testing</span><span>Regression Testing</span><span>Python</span>
-              <span>CI/CD</span><span>SQL</span><span>Defect Tracking</span>
-              <span>Agile / Scrum</span><span>Test Automation</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <button class="card-button secondary disable-button">Source Code</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/customer-service-communication.jpg" alt="ATC Customer Service">
-            <h3 class="card-front-title">ATC - Customer Service</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">ATC - Customer Service</p>
-            <p class="card-description">Application focused on contingency situations, with improvements in UX design
-              and usability. Integration with the ADMS system was implemented, optimizing the tool's efficiency.</p>
-            <div class="card-company">
-              <span>Company: Equatorial Energia MA</span>
-              <span class="exclusive">Company Exclusive</span>
-            </div>
-            <div class="card-tags">
-              <span>Microsoft Visual Studio</span><span>VB.Net</span><span>SQL</span>
-              <span>Front-End / Back-End</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <button class="card-button secondary disable-button">Source Code</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/istockphoto-1364931222-612x612.jpg" alt="PROINC Application">
-            <h3 class="card-front-title">PROINC - Correcting Inconsistencies</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">PROINC - Correcting Inconsistencies</p>
-            <p class="card-description">System developed for correcting inconsistencies, focusing on UX design and
-              usability improvements. Integration with the ADMS system was implemented, optimizing the tool's
-              efficiency.</p>
-            <div class="card-company">
-              <span>Company: Equatorial Energia MA</span>
-              <span class="exclusive">Company Exclusive</span>
-            </div>
-            <div class="card-tags">
-              <span>Microsoft Visual Studio</span><span>VB.Net</span><span>SQL</span>
-              <span>Front-End / Back-End</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <button class="card-button secondary disable-button">Source Code</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/lixeiras.png" alt="DC Correct Disposal">
-            <h3 class="card-front-title">DC - Correct Disposal</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">DC - Correct Disposal</p>
-            <p class="card-description">Group project focused on the incorrect disposal of solid waste. We created a
-              simple and interactive solution to inform, guide and encourage sustainable practices in our community.</p>
-            <div class="card-company">
-              <span>Scholarship: Back-End Tracks</span>
-              <span>Position: Vice-Leader</span>
-            </div>
-            <div class="card-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
-              <span>Front-End / Back-End</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://descartecerto.vercel.app/" target="_blank" rel="noopener noreferrer"><button
-                  class="card-button">Visit Project</button></a>
-              <a href="https://github.com/FelipeAlmadaa/DC-Descarte-Certo" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/Furia_Esports_logo.png" alt="Know Your Fa Furia">
-            <h3 class="card-front-title">Know-Your-Fa-Furia</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">Know-Your-Fa-Furia</p>
-            <p class="card-description">Streamlit web app for registering FURIA fans, validating documents with OCR,
-              analyzing Twitter bio and tweets, logging e-sports activities, and generating AI-based recommendations.
-              Data organized in tabs and saved locally in CSV and JSON.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>Python</span><span>Pandas</span><span>PIL</span>
-              <span>Tesseract OCR</span><span>API</span><span>Git</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/Know-your-fa-furia" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ChatBot - Furia Zone card hidden intentionally
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/chatbot_furia_new.png" alt="ChatBot Furia">
-            <h3 class="card-front-title">ChatBot - Furia Zone</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">ChatBot - Furia Zone</p>
-            <p class="card-description">Interactive platform that engages FURIA fans in a dynamic and informative
-              environment. Through a chatbot, users can get information about the team, upcoming matches, and rankings,
-              promoting direct communication between team and fans.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-              <span>Git</span><span>Front-End / Back-End</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://chat-bot-furia-omega.vercel.app/" target="_blank" rel="noopener noreferrer"><button
-                  class="card-button">Visit Project</button></a>
-              <a href="https://github.com/FelipeAlmadaa/ChatBot-Furia" target="_blank" rel="noopener noreferrer"><button
-                  class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
-        </div>
-        -->
-
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/form.jpg" alt="Registration Form">
-            <h3 class="card-front-title">Registration Form System</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">Registration Form System</p>
-            <p class="card-description">System to manage and automate the application, selection, and enrollment process
-              of candidates in an efficient and scalable way, ensuring accessibility, transparency, and information
-              security.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://trilha-back-end-desafio-3.vercel.app/" target="_blank" rel="noopener noreferrer"><button
-                  class="card-button">Visit Project</button></a>
-              <a href="https://github.com/FelipeAlmadaa/TrilhaBackEnd-Desafio-3" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-zone">
-            <img src="./IMGS/vaccine_card.png" alt="Vaccine Card">
-            <h3 class="card-front-title">Vaccine Card</h3>
-          </div>
-          <div class="card-content">
-            <p class="card-title">Vaccine Card</p>
-            <p class="card-description">A digital vaccination card system to manage immunization records and provide
-              easy tracking of vaccination history.</p>
-            <div class="card-company">
-              <span>Personal Project</span>
-              <span class="exclusive" style="background-color: var(--accent-primary); color: white;">Open Source</span>
-            </div>
-            <div class="card-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <div class="card-actions">
-              <button class="card-button disable-button">Visit Project</button>
-              <a href="https://github.com/FelipeAlmadaa/Carteira_de_Vacina" target="_blank"
-                rel="noopener noreferrer"><button class="card-button secondary">Source Code</button></a>
-            </div>
-          </div>
-        </div>
-
+          <span class="work-year mono">2024</span>
+          <span class="work-arrow" aria-hidden="true">↗</span>
+        </a>
       </div>
-    </div>
+    </section>
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <footer class="contact" id="contact">
+      <p class="contact-kicker mono reveal">// FINAL ASSERTION</p>
+      <h2 class="contact-title reveal">
+        <span class="line">LET'S SHIP</span>
+        <span class="line"><em>QUALITY.</em></span>
+      </h2>
+
+      <a class="contact-email reveal" href="mailto:felipealmada1403@yahoo.com">felipealmada1403@yahoo.com</a>
+
+      <div class="contact-links mono reveal">
+        <a href="https://github.com/FelipeAlmadaa" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+        <a href="https://www.linkedin.com/in/felipe-a-s-almada" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+        <a href="https://wa.me/+5598991334420" target="_blank" rel="noopener noreferrer">WHATSAPP ↗</a>
+        <a href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV">RESUME ↓</a>
+      </div>
+
+      <div class="footer-bar mono">
+        <span>© 2026 FELIPE ALMADA</span>
+        <span class="footer-status"><span class="pulse-dot"></span>ALL TESTS PASSING</span>
+        <span id="localTime">—:—:—</span>
+      </div>
+    </footer>
+
   </main>
 
-  <!-- Footer / Contact -->
-  <footer id="contact" class="loading partial-border">
-    <div class="universe"></div>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-    <h3 class="contact-text-footer">Let's Work Together</h3>
-
-    <div class="social-midia">
-      <ul>
-        <li>
-          <a href="https://wa.me/+5598991334420" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp icon"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:felipealmada1403@yahoo.com" aria-label="E-mail">
-            <i class="fas fa-envelope icon"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/felipe-a-s-almada" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in icon"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/FelipeAlmadaa" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github icon"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <p class="contact-text-footer">
-      If you have any questions or would like to discuss a project,
-      please feel free to reach out via email or through my social media channels.
-    </p>
-    <p class="contact-text-footer-2">&copy; 2026 Felipe Almada. <span class="break-mobile">All Rights Reserved.</span>
-    </p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="./JS/skeleton.js"></script>
-  <script src="./JS/script.js"></script>
-  <script src="./JS/scroll-script.js"></script>
-  <script src="./JS/switch.js"></script>
-
-  <!-- Custom Cursor Script -->
-  <script>
-    (function () {
-      const dot = document.getElementById('cursorDot');
-      const ring = document.getElementById('cursorRing');
-      if (!dot || !ring) return;
-      let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-      document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX; mouseY = e.clientY;
-        dot.style.left = mouseX + 'px'; dot.style.top = mouseY + 'px';
-      });
-      function animateRing() {
-        ringX += (mouseX - ringX) * 0.12;
-        ringY += (mouseY - ringY) * 0.12;
-        ring.style.left = ringX + 'px'; ring.style.top = ringY + 'px';
-        requestAnimationFrame(animateRing);
-      }
-      animateRing();
-      document.querySelectorAll('a, button, .card, .custom-div, .container-skill-grup').forEach(el => {
-        el.addEventListener('mouseenter', () => ring.classList.add('hovering'));
-        el.addEventListener('mouseleave', () => ring.classList.remove('hovering'));
-      });
-    })();
-  </script>
-
-  <!-- Header scroll effect -->
-  <script>
-    (function () {
-      const header = document.getElementById('mainHeader');
-      if (!header) return;
-      window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 20);
-      }, { passive: true });
-    })();
-  </script>
-
+  <script src="./JS/alt-layout.js"></script>
 </body>
 
 </html>
