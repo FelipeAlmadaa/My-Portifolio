@@ -14,6 +14,7 @@
     rel="stylesheet" />
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8f04c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='4 17 10 11 4 5'></polyline><line x1='12' y1='19' x2='20' y2='19'></line></svg>">
+  <script src="./JS/translations.js"></script>
   <link rel="stylesheet" href="./CSS/alt-layout.css" />
 
   <!-- Google tag (gtag.js) -->
@@ -48,12 +49,19 @@
   <header class="site-header" id="siteHeader">
     <a class="logo mono" href="#top">FA<span class="accent">.</span>LOG</a>
     <nav class="site-nav mono">
-      <a href="#about">about</a>
-      <a href="#skills">skills</a>
-      <a href="#work">work</a>
-      <a href="#contact">contact</a>
+      <a href="#about" data-i18n="nav_about">about</a>
+      <a href="#skills" data-i18n="nav_skills">skills</a>
+      <a href="#work" data-i18n="nav_work">work</a>
+      <a href="#contact" data-i18n="nav_contact">contact</a>
     </nav>
-    <div class="header-status mono"><span class="pulse-dot"></span>BUILD PASSING</div>
+    <div class="header-status mono">
+      <div class="lang-switch">
+        <span class="lang-btn active" data-lang="en">EN</span> | 
+        <span class="lang-btn" data-lang="pt">PT</span> | 
+        <span class="lang-btn" data-lang="es">ES</span>
+      </div>
+      <span class="pulse-dot"></span><span data-i18n="header_status">BUILD PASSING</span>
+    </div>
   </header>
 
   <main id="top">
@@ -61,10 +69,10 @@
     <!-- ══════════ HERO ══════════ -->
     <section class="hero">
       <div class="hero-top reveal">
-        <p class="hero-kicker mono">// QA AUTOMATION ENGINEER — SDET</p>
+        <p class="hero-kicker mono" data-i18n="hero_kicker">// QA AUTOMATION ENGINEER — SDET</p>
         <div class="hero-meta mono">
-          <p><span class="pulse-dot"></span>AVAILABLE FOR WORK</p>
-          <p>BASED IN BRAZIL — WORKING WORLDWIDE</p>
+          <p><span class="pulse-dot"></span><span data-i18n="hero_avail">AVAILABLE FOR WORK</span></p>
+          <p data-i18n="hero_based">BASED IN BRAZIL — WORKING WORLDWIDE</p>
         </div>
       </div>
 
@@ -74,16 +82,16 @@
       </h1>
 
       <div class="hero-center reveal">
-        <p class="hero-manifesto">
+        <p class="hero-manifesto" data-i18n="hero_manifesto">
           Quality is the foundation of scalable and resilient software.
           <strong>6+ years</strong> engineering <strong>test automation</strong>,
           <strong>CI/CD</strong> pipelines and <strong>backend systems</strong> teams
           trust in production.
         </p>
-        <a class="hero-cv" href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV">DOWNLOAD CV ↓</a>
+        <a class="hero-cv" href="./FILES/Felipe Almada - Resume.pdf" download="Felipe_Almada_CV" data-i18n="hero_cv">DOWNLOAD CV ↓</a>
       </div>
 
-      <div class="scroll-hint mono" aria-hidden="true">SCROLL ↓</div>
+      <div class="scroll-hint mono" aria-hidden="true" data-i18n="scroll_hint">SCROLL ↓</div>
     </section>
 
     <!-- ══════════ MARQUEE ══════════ -->
@@ -104,22 +112,22 @@
     <section class="about" id="about">
       <div class="section-head reveal">
         <span class="section-index mono">01</span>
-        <h2 class="section-title">WHO<br /><em>I AM</em></h2>
+        <h2 class="section-title" data-i18n="section_about">WHO<br /><em>I AM</em></h2>
       </div>
 
       <div class="about-grid">
         <figure class="about-photo reveal">
           <img src="./IMGS/eu3.jpg" alt="Felipe Almada" />
-          <figcaption class="mono">felipe.almada — est. 2000</figcaption>
+          <figcaption class="mono" data-i18n="about_caption">felipe.almada — est. 2000</figcaption>
         </figure>
 
         <div class="about-copy">
-          <p class="about-lead reveal">
+          <p class="about-lead reveal" data-i18n="about_lead">
             Senior Backend &amp; QA Engineer. I hold a degree in <strong>Science and Technology</strong>,
             I'm finishing <strong>Computer Engineering</strong> at UFMA, and I completed postgraduate degrees in
             <strong>Software Quality Management</strong> and <strong>DevOps</strong>.
           </p>
-          <p class="about-text reveal">
+          <p class="about-text reveal" data-i18n="about_text">
             My work lives where development meets reliability: Python, TypeScript and JavaScript on one side —
             Playwright, Pytest, K6 and CI/CD pipelines on the other. Agile by habit, curious by default.
           </p>
@@ -127,22 +135,22 @@
           <div class="stats reveal">
             <div class="stat">
               <span class="stat-number">6<span class="accent">+</span></span>
-              <span class="stat-label mono">YEARS OF EXPERIENCE</span>
+              <span class="stat-label mono" data-i18n="stat_years">YEARS OF EXPERIENCE</span>
             </div>
             <div class="stat">
               <span class="stat-number">12</span>
-              <span class="stat-label mono">PROJECTS SHIPPED</span>
+              <span class="stat-label mono" data-i18n="stat_projects">PROJECTS SHIPPED</span>
             </div>
             <div class="stat">
               <span class="stat-number">4</span>
-              <span class="stat-label mono">DEGREES &amp; POSTGRADS</span>
+              <span class="stat-label mono" data-i18n="stat_degrees">DEGREES &amp; POSTGRADS</span>
             </div>
             <div class="stat">
               <span class="stat-number">0</span>
-              <span class="stat-label mono">BUGS LEFT BEHIND*</span>
+              <span class="stat-label mono" data-i18n="stat_bugs">BUGS LEFT BEHIND*</span>
             </div>
           </div>
-          <p class="stats-footnote mono reveal">* none that survived regression.</p>
+          <p class="stats-footnote mono reveal" data-i18n="stat_foot">* none that survived regression.</p>
         </div>
       </div>
 
@@ -150,25 +158,25 @@
       <div class="ledger reveal">
         <div class="ledger-row">
           <span class="ledger-index mono">E1</span>
-          <span class="ledger-title">Science and Technology</span>
+          <span class="ledger-title" data-i18n="ed_sci">Science and Technology</span>
           <span class="ledger-place mono">UFMA</span>
           <span class="ledger-date mono">2019—2024</span>
         </div>
         <div class="ledger-row">
           <span class="ledger-index mono">E2</span>
-          <span class="ledger-title">Computer Engineering</span>
+          <span class="ledger-title" data-i18n="ed_comp">Computer Engineering</span>
           <span class="ledger-place mono">UFMA</span>
-          <span class="ledger-date mono">2024—NOW</span>
+          <span class="ledger-date mono" data-i18n="ed_now">2024—NOW</span>
         </div>
         <div class="ledger-row">
           <span class="ledger-index mono">E3</span>
-          <span class="ledger-title">Postgrad · Software Quality Management</span>
+          <span class="ledger-title" data-i18n="ed_pg_qa">Postgrad · Software Quality Management</span>
           <span class="ledger-place mono">POSTGRAD</span>
           <span class="ledger-date mono">2025—2026</span>
         </div>
         <div class="ledger-row">
           <span class="ledger-index mono">E4</span>
-          <span class="ledger-title">Postgrad · DevOps</span>
+          <span class="ledger-title" data-i18n="ed_pg_dev">Postgrad · DevOps</span>
           <span class="ledger-place mono">POSTGRAD</span>
           <span class="ledger-date mono">2025—2026</span>
         </div>
@@ -179,7 +187,7 @@
     <section class="skills" id="skills">
       <div class="section-head reveal">
         <span class="section-index mono">02</span>
-        <h2 class="section-title">WHAT<br /><em>I RUN</em></h2>
+        <h2 class="section-title" data-i18n="section_skills">WHAT<br /><em>I RUN</em></h2>
       </div>
 
       <div class="skill-grid">
@@ -209,7 +217,7 @@
                 <path d="M9 14l2 2 4-4"></path>
               </svg>
             </span>
-            <h3 class="skill-name">QA &amp; Manual Testing</h3>
+            <h3 class="skill-name" data-i18n="skill_qa">QA &amp; Manual Testing</h3>
           </div>
           <div class="skill-chips">
             <span>Test Planning</span><span>Test Cases</span><span>UAT</span><span>Functional</span>
@@ -225,7 +233,7 @@
                 <polyline points="8 6 2 12 8 18"></polyline>
               </svg>
             </span>
-            <h3 class="skill-name">Languages</h3>
+            <h3 class="skill-name" data-i18n="skill_lang">Languages</h3>
           </div>
           <div class="skill-chips">
             <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>C#</span><span>VB.NET</span>
@@ -257,7 +265,7 @@
                 <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
               </svg>
             </span>
-            <h3 class="skill-name">DevOps &amp; Tools</h3>
+            <h3 class="skill-name" data-i18n="skill_tools">DevOps &amp; Tools</h3>
           </div>
           <div class="skill-chips">
             <span>CI/CD</span><span>GitHub Actions</span><span>Docker</span><span>Kubernetes</span>
@@ -288,7 +296,7 @@
     <section class="work" id="work">
       <div class="section-head reveal">
         <span class="section-index mono">03</span>
-        <h2 class="section-title">SELECTED<br /><em>WORK</em></h2>
+        <h2 class="section-title" data-i18n="section_work">SELECTED<br /><em>WORK</em></h2>
       </div>
 
       <div class="work-grid">
@@ -330,10 +338,10 @@
                 <path d="m9 12 2 2 4-4" />
               </svg></span>
             <h3 class="work-hover-title">QA/SDET SaaS Platform Testing</h3>
-            <p class="work-desc">Complete QA/SDET project for a simulated multi-tenant SaaS platform: 45 automated E2E
+            <p class="work-desc" data-i18n="work_1_desc">Complete QA/SDET project for a simulated multi-tenant SaaS platform: 45 automated E2E
               and API tests covering onboarding, auth, payments and tenant isolation, plus full manual QA docs and
               CI/CD.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -368,9 +376,9 @@
                 <path d="m22 7-8.5 8.5-5-5L2 17" />
               </svg></span>
             <h3 class="work-hover-title">K6 API Performance Testing</h3>
-            <p class="work-desc">Professional load, stress, spike and smoke testing suite built with Grafana K6 and
+            <p class="work-desc" data-i18n="work_2_desc">Professional load, stress, spike and smoke testing suite built with Grafana K6 and
               JavaScript. Validates API resilience with automated thresholds and CI/CD integration.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -411,9 +419,9 @@
                 <path d="M8.5 2h7" />
               </svg></span>
             <h3 class="work-hover-title">Reqres API Testing with Pytest</h3>
-            <p class="work-desc">Automated REST API testing suite using Python, Pytest and Requests, featuring JSON
+            <p class="work-desc" data-i18n="work_3_desc">Automated REST API testing suite using Python, Pytest and Requests, featuring JSON
               schema validation, dynamic test data, HTML reports and CI/CD via GitHub Actions.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -462,9 +470,9 @@
                   d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" />
               </svg></span>
             <h3 class="work-hover-title">Playwright Python E2E Automation</h3>
-            <p class="work-desc">End-to-end test automation framework built for Sauce Demo using Python, Pytest,
+            <p class="work-desc" data-i18n="work_4_desc">End-to-end test automation framework built for Sauce Demo using Python, Pytest,
               Playwright, Page Object Model and Allure Report, with CI/CD execution via GitHub Actions.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -520,10 +528,10 @@
                 <path d="M16 7v9" />
               </svg></span>
             <h3 class="work-hover-title">Rally Project — QA Engineer</h3>
-            <p class="work-desc">Focused on improving software reliability and testing efficiency: functional and
+            <p class="work-desc" data-i18n="work_5_desc">Focused on improving software reliability and testing efficiency: functional and
               regression testing, defect tracking, automation with Python, and close collaboration with development
               teams.</p>
-            <span class="work-cta mono">NDA — DETAILS ON REQUEST</span>
+            <span class="work-cta mono" data-i18n="cta_nda">NDA — DETAILS ON REQUEST</span>
           </div>
         </div>
 
@@ -565,9 +573,9 @@
                 <rect x="2" y="5" width="20" height="14" rx="2" />
               </svg></span>
             <h3 class="work-hover-title">ATC — Customer Service</h3>
-            <p class="work-desc">Application focused on contingency situations, with improvements in UX design and
+            <p class="work-desc" data-i18n="work_6_desc">Application focused on contingency situations, with improvements in UX design and
               usability. Integration with the ADMS system optimized the tool's efficiency.</p>
-            <span class="work-cta mono">NDA — DETAILS ON REQUEST</span>
+            <span class="work-cta mono" data-i18n="cta_nda">NDA — DETAILS ON REQUEST</span>
           </div>
         </div>
 
@@ -609,9 +617,9 @@
                 <path d="m3 7 2 2 4-4" />
               </svg></span>
             <h3 class="work-hover-title">PROINC — Correcting Inconsistencies</h3>
-            <p class="work-desc">System developed for correcting inconsistencies, focusing on UX design and usability
+            <p class="work-desc" data-i18n="work_7_desc">System developed for correcting inconsistencies, focusing on UX design and usability
               improvements, with ADMS system integration optimizing the tool's efficiency.</p>
-            <span class="work-cta mono">NDA — DETAILS ON REQUEST</span>
+            <span class="work-cta mono" data-i18n="cta_nda">NDA — DETAILS ON REQUEST</span>
           </div>
         </div>
 
@@ -659,9 +667,9 @@
                 <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
               </svg></span>
             <h3 class="work-hover-title">DC — Correct Disposal</h3>
-            <p class="work-desc">Group project focused on the incorrect disposal of solid waste: a simple, interactive
+            <p class="work-desc" data-i18n="work_11_desc">Group project focused on the incorrect disposal of solid waste: a simple, interactive
               solution to inform, guide and encourage sustainable practices in our community.</p>
-            <span class="work-cta mono">VISIT SITE ↗</span>
+            <span class="work-cta mono" data-i18n="cta_site">VISIT SITE ↗</span>
           </div>
         </a>
 
@@ -706,9 +714,9 @@
                 <circle cx="11" cy="11" r="8" />
               </svg></span>
             <h3 class="work-hover-title">Know-Your-Fa-Furia</h3>
-            <p class="work-desc">Streamlit web app for registering FURIA fans, validating documents with OCR, analyzing
+            <p class="work-desc" data-i18n="work_9_desc">Streamlit web app for registering FURIA fans, validating documents with OCR, analyzing
               Twitter bio/tweets, logging e-sports activity and generating AI-based recommendations.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -753,9 +761,9 @@
                   d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
               </svg></span>
             <h3 class="work-hover-title">Registration Form System</h3>
-            <p class="work-desc">System to manage and automate the application, selection and enrollment process of
+            <p class="work-desc" data-i18n="work_10_desc">System to manage and automate the application, selection and enrollment process of
               candidates, ensuring accessibility, transparency and information security.</p>
-            <span class="work-cta mono">VISIT SITE ↗</span>
+            <span class="work-cta mono" data-i18n="cta_site">VISIT SITE ↗</span>
           </div>
         </a>
 
@@ -800,9 +808,9 @@
                 <path d="m9 12 2 2 4-4" />
               </svg></span>
             <h3 class="work-hover-title">Vaccine Card</h3>
-            <p class="work-desc">A digital vaccination card system to manage immunization records and provide easy
+            <p class="work-desc" data-i18n="work_8_desc">A digital vaccination card system to manage immunization records and provide easy
               tracking of vaccination history.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -851,9 +859,9 @@
                   d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
               </svg></span>
             <h3 class="work-hover-title">Backpack Game Project</h3>
-            <p class="work-desc">An inventory management game prototype focusing on a backpack system, featuring item
+            <p class="work-desc" data-i18n="work_12_desc">An inventory management game prototype focusing on a backpack system, featuring item
               organization and strategic placement mechanics.</p>
-            <span class="work-cta mono">VIEW REPO ↗</span>
+            <span class="work-cta mono" data-i18n="cta_repo">VIEW REPO ↗</span>
           </div>
         </a>
 
@@ -862,8 +870,8 @@
 
     <!-- ══════════ CONTACT ══════════ -->
     <footer class="contact" id="contact">
-      <p class="contact-kicker mono reveal">// FINAL ASSERTION</p>
-      <h2 class="contact-title reveal">
+      <p class="contact-kicker mono reveal" data-i18n="contact_kicker">// FINAL ASSERTION</p>
+      <h2 class="contact-title reveal" data-i18n="contact_title">
         <span class="line">LET'S SHIP</span>
         <span class="line"><em>QUALITY</em><span class="cursor-block">▮</span></span>
       </h2>
@@ -913,8 +921,8 @@
       </div>
 
       <div class="footer-bar mono">
-        <span>© 2026 FELIPE ALMADA</span>
-        <span class="footer-status"><span class="pulse-dot"></span>ALL TESTS PASSING</span>
+        <span data-i18n="footer_copy">© 2026 FELIPE ALMADA</span>
+        <span class="footer-status"><span class="pulse-dot"></span><span data-i18n="footer_status">ALL TESTS PASSING</span></span>
         <span id="localTime">—:—:—</span>
       </div>
     </footer>

@@ -45,4 +45,45 @@
     clock.textContent = 'LOCAL ' + now.toLocaleTimeString('en-GB');
   }
   if (clock) { tick(); setInterval(tick, 1000); }
+
+  /* --- i18n Language Switcher --- */
+  const langBtns = document.querySelectorAll('.lang-btn');
+  const i18nElements = document.querySelectorAll('[data-i18n]');
+  
+  function setLanguage(lang) {
+    if (!window.translations || !window.translations[lang]) return;
+    
+    // Update elements
+    i18nElements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (window.translations[lang][key]) {
+        el.innerHTML = window.translations[lang][key];
+      }
+    });
+
+    // Update active button state
+    langBtns.forEach(btn => {
+      if (btn.getAttribute('data-lang') === lang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Save preference
+    localStorage.setItem('flog_lang', lang);
+  }
+
+  // Bind click events
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      setLanguage(lang);
+    });
+  });
+
+  // Load initial language
+  const savedLang = localStorage.getItem('flog_lang') || 'en';
+  setLanguage(savedLang);
+
 })();

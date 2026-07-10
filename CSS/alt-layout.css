@@ -209,6 +209,25 @@ a {
   gap: 8px;
 }
 
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  margin-right: 16px;
+  border-right: 1px solid var(--rule);
+  padding-right: 16px;
+}
+
+.lang-btn {
+  cursor: pointer;
+  color: var(--ivory-dim);
+  transition: color 0.3s ease;
+}
+
+.lang-btn:hover, .lang-btn.active {
+  color: var(--lime);
+  font-weight: 700;
+}
+
 .pulse-dot {
   width: 8px;
   height: 8px;
