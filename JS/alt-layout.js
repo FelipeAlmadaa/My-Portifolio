@@ -49,10 +49,8 @@
   /* --- i18n Language Switcher --- */
   const langBtns = document.querySelectorAll('.lang-btn');
   const i18nElements = document.querySelectorAll('[data-i18n]');
-  const mainContent = document.getElementById('top');
-  let isAnimating = false;
   
-  function applyLanguage(lang) {
+  function setLanguage(lang) {
     if (!window.translations || !window.translations[lang]) return;
     
     // Update elements
@@ -76,44 +74,16 @@
     localStorage.setItem('flog_lang', lang);
   }
 
-  function setLanguageWithAnimation(lang) {
-    const currentLang = localStorage.getItem('flog_lang') || 'en';
-    if (currentLang === lang || isAnimating) return;
-    
-    isAnimating = true;
-    
-    // Animate out
-    mainContent.classList.add('animate__animated', 'animate__zoomOutRight', 'animate__faster');
-    
-    mainContent.addEventListener('animationend', function handleOut(e) {
-      if (e.animationName !== 'zoomOutRight') return;
-      mainContent.removeEventListener('animationend', handleOut);
-      
-      applyLanguage(lang);
-      
-      // Animate in
-      mainContent.classList.remove('animate__zoomOutRight');
-      mainContent.classList.add('animate__zoomIn');
-      
-      mainContent.addEventListener('animationend', function handleIn(e2) {
-        if (e2.animationName !== 'zoomIn') return;
-        mainContent.removeEventListener('animationend', handleIn);
-        mainContent.classList.remove('animate__animated', 'animate__zoomIn', 'animate__faster');
-        isAnimating = false;
-      });
-    });
-  }
-
   // Bind click events
   langBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const lang = btn.getAttribute('data-lang');
-      setLanguageWithAnimation(lang);
+      setLanguage(lang);
     });
   });
 
-  // Load initial language (without animation)
+  // Load initial language
   const savedLang = localStorage.getItem('flog_lang') || 'en';
-  applyLanguage(savedLang);
+  setLanguage(savedLang);
 
 })();
