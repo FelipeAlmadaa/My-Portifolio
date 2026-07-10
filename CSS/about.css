@@ -155,10 +155,11 @@ body.light-mode .custom-3-div img {
 /* ─── Goals Lists ─── */
 .list-grup {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 8px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, max-content));
+  gap: 8px 56px;
   width: 100%;
   max-width: 760px;
+  justify-content: center;
 }
 
 .list-goals-1,
