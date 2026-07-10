@@ -1073,3 +1073,11 @@ footer.contact {
     align-self: center;
   }
 }
+
+/* --- Language Switch Animation --- */
+.i18n-transition {
+  transition: opacity 0.4s ease-in-out !important;
+}
+.i18n-fade-out {
+  opacity: 0 !important;
+}
