@@ -25,6 +25,16 @@
 
   document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
 
+  /* Glass header on scroll */
+  const siteHeader = document.getElementById('siteHeader');
+  function updateHeaderScroll() {
+    siteHeader.classList.toggle('scrolled', window.scrollY > 40);
+  }
+  if (siteHeader) {
+    updateHeaderScroll();
+    window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+  }
+
   /* Local time in the footer bar */
   const clock = document.getElementById('localTime');
   function tick() {
