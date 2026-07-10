@@ -116,10 +116,19 @@ a {
 
 .pre-line {
   opacity: 0;
+  width: fit-content;
+  clip-path: inset(0 100% 0 0);
 }
 
 .pre-line.show {
   opacity: 1;
+  animation: typing 0.85s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 .ok {

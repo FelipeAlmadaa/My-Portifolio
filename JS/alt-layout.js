@@ -5,13 +5,16 @@
   /* Preloader: type out the fake test run, then slide the curtain up */
   const preloader = document.getElementById('preloader');
   const lines = document.querySelectorAll('.pre-line');
+  const delays = [400, 1200, 1800, 2900, 3400]; // irregular timings for a realistic vibe
+  
   lines.forEach(function (line, i) {
-    setTimeout(function () { line.classList.add('show'); }, 260 * (i + 1));
+    setTimeout(function () { line.classList.add('show'); }, delays[i] || (500 * (i + 1)));
   });
+  
   setTimeout(function () {
     preloader.classList.add('done');
     setTimeout(function () { preloader.remove(); }, 800);
-  }, 260 * (lines.length + 2));
+  }, 5500);
 
   /* Reveal-on-scroll */
   const observer = new IntersectionObserver(function (entries) {
