@@ -22,6 +22,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -30,6 +32,8 @@ body {
   font-family: "Space Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 ::selection {
@@ -1050,6 +1054,18 @@ footer.contact {
   .work-card:hover .work-card-face {
     opacity: 1;
     transform: none;
+  }
+
+  .header-status {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  
+  .lang-switch {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
