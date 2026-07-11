@@ -47,7 +47,7 @@ const translations = {
     cta_site: "VISIT SITE ↗",
     cta_nda: "NDA — DETAILS ON REQUEST",
     contact_kicker: "// FINAL ASSERTION",
-    contact_title: "<span class=\"line\">LET'S SHIP</span><span class=\"line\"><em>QUALITY.</em></span>",
+    contact_title: "<span class=\"line\">LET'S SHIP</span><span class=\"line\"><em>QUALITY</em><span class=\"cursor-block\">▮</span></span>",
     footer_copy: "© 2026 FELIPE ALMADA",
     footer_status: "ALL TESTS PASSING"
   },
@@ -99,7 +99,7 @@ const translations = {
     cta_site: "VISITAR SITE ↗",
     cta_nda: "NDA — DETALHES SOB DEMANDA",
     contact_kicker: "// ASSERÇÃO FINAL",
-    contact_title: "<span class=\"line\">VAMOS GARANTIR</span><span class=\"line\"><em>QUALIDADE.</em></span>",
+    contact_title: "<span class=\"line\">VAMOS GARANTIR</span><span class=\"line\"><em>QUALIDADE</em><span class=\"cursor-block\">▮</span></span>",
     footer_copy: "© 2026 FELIPE ALMADA",
     footer_status: "TODOS OS TESTES PASSANDO"
   },
@@ -151,7 +151,7 @@ const translations = {
     cta_site: "VISITAR SITIO ↗",
     cta_nda: "NDA — DETALLES A PETICIÓN",
     contact_kicker: "// ASERCIÓN FINAL",
-    contact_title: "<span class=\"line\">VAMOS A ASEGURAR</span><span class=\"line\"><em>CALIDAD.</em></span>",
+    contact_title: "<span class=\"line\">VAMOS A ASEGURAR</span><span class=\"line\"><em>CALIDAD</em><span class=\"cursor-block\">▮</span></span>",
     footer_copy: "© 2026 FELIPE ALMADA",
     footer_status: "TODAS LAS PRUEBAS PASANDO"
   }
